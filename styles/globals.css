@@ -65,7 +65,6 @@ nav.navbar .nav-link.active {
   color: white !important; 
 }
 
-/* styles.css */
 .card-wrapper {
   transition: transform 0.3s, box-shadow 0.3s;
 }

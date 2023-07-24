@@ -3,6 +3,8 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import styles from '@styles/page.module.css'
 import cover from '@public/image.png'
+import PhotoCarousel from '@app/PhotoCarousel.js';
+
 // import "aos/dist/aos.css"
 // import AOS from "aos"
 
@@ -24,7 +26,7 @@ export default function Home() {
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link"  href="#about">
+                <a class="nav-link" href="#about">
                   About
                 </a>
               </li>
@@ -182,14 +184,21 @@ export default function Home() {
         <div className='text-center  py-5' style={{ fontSize: '20px' }}>
           Hop on over to <a class="navbar-brand" href='https://medium.com/@uvini-ranaweera' target='_'><span className={styles.gradientText}><b> Medium </b></span></a>and feast your eyes on more stories.
         </div>
-        <div className='text-center py-5' >
-          <div className='mb-3' style={{ fontSize: '35px', fontFamily: 'Titillium Web' }}>
-            When I'm not engrossed in work,
+          <div className="container py-5">
+            <div className="row justify-content-center align-items-center">
+              <div className="col-md-5 h-100">
+                <div className='mb-3' style={{ fontSize: '35px', fontFamily: 'Titillium Web' }}>
+                  <p  style={{ fontSize: '35px', fontFamily: 'Titillium Web' }}>When I'm not engrossed in work, you'll find me with a </p>
+                  <span className={`${styles.travel} px-3`}>travel itinerary ✈️</span>
+                  {/* <p style = {{backgroundColor: '#F1A638'}}> travel itinerary✈️ </p> */}
+                  </div>
+              </div>
+              <div className="col-md-7 mx-auto">
+                <PhotoCarousel />
+              </div>
+            </div>
           </div>
-          <div className='mb-3' style={{ fontSize: '35px', fontFamily: 'Titillium Web' }}> you'll find me with a <h2> travel itinerary✈️  </h2>
-          </div>
-        </div>
-      </div >
+      </div>
     </main >
   )
 }
