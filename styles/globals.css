@@ -1,0 +1,104 @@
+@import "@node_modules/bootstrap/dist/css/bootstrap.min.css";
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap'); */
+
+body {
+  background-color: #0F2437;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 50px;
+  color:  white;
+  font-family: "Titillium Web",'Times New Roman', Times, serif;
+  text-align:center;
+}
+
+h2 {
+  font-size: 35px;
+  color: white;
+  background-color: #F1A638;
+  display: inline;
+  text-align: center;
+  font-family: "Titillium Web",'Times New Roman', Times, serif;
+  padding: 5px; 
+}
+
+h3 {
+  font-size: 30px;
+  color: white;
+  text-align:center;
+}
+
+p {
+  font-size: 25px;
+}
+
+nav.navbar {
+  background-color:  #0F2437 !important;
+  padding-top: 20px;
+}
+
+nav.navbar .nav-link {
+  color: white; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav.navbar .nav-link:hover {
+  color: #F1A638; 
+}
+
+nav.navbar .nav-link.active {
+  color: #F1A638; 
+}
+
+.navbar-brand {
+  color: white; 
+}
+
+.navbar-brand:hover {
+  color: white !important; 
+}
+
+/* styles.css */
+.card-wrapper {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-wrapper:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(125, 125, 125, 0.912); 
+}
+
+
+.reduced-font-size {
+  font-size: 20px;
+}
+
+.gradientText {
+  background-image: linear-gradient(to right, #0CB9C1, #EF4573);
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  color: transparent;
+}
+
+/* .gradient-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #0CB9C1, #000000);
+  color: white;
+  text-align: center;
+  font-family: "Open Sans"
+} */
+
+.display-badge {
+  display: inline-block;
+  text-align: center;
+  font-family: "Open Sans"
+} 

@@ -1,0 +1,22 @@
+.pink{
+  color: #EF4573;
+}
+
+.blue{
+  color: #0CB9C1;
+}
+
+.yellow{
+  color: #F1A638;
+}
+
+.cover{
+  object-fit: contain;
+}
+
+.gradientText {
+  background-image: linear-gradient(to right, #0CB9C1, #EF4573);
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  color: transparent;
+}
