@@ -1,7 +1,7 @@
 .carousel-root {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #0F2437;
+    background-color: #0f172a;
   }
   
   .carousel .slide img {
@@ -14,8 +14,6 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
-    border-top: 5px solid #EF4573; 
-    border-bottom: 5px solid #0CB9C1; 
     border-left: none;
     border-right: none;
     padding: 20px;

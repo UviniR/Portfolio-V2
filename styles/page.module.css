@@ -1,13 +1,9 @@
 .pink{
-  color: #EF4573;
+  color:rgb(94 234 212);
 }
 
 .blue{
-  color: #0CB9C1;
-}
-
-.yellow{
-  color: #F1A638;
+  color:rgb(94 234 212);
 }
 
 .cover{
@@ -15,12 +11,14 @@
 }
 
 .gradientText {
-  background-image: linear-gradient(to right, #0CB9C1, #EF4573);
+  background-image: linear-gradient(to right, #646ffe, #14b2fa);
   background-clip: text; 
   -webkit-background-clip: text; 
   color: transparent;
 }
 
 .travel{
-  background-color: #F1A638;
+  background-color:rgba(45,212,191,.1);
+  font-weight: 900;
+  color: #33FFE7;
 }

@@ -3,7 +3,6 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import styles from '@styles/page.module.css'
 import cover from '@public/image.png'
-import PhotoCarousel from '@app/PhotoCarousel.js';
 
 // import "aos/dist/aos.css"
 // import AOS from "aos"
@@ -17,8 +16,8 @@ export default function Home() {
     <main>
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container">
-          <a class="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_'>
-            Connect with  <span class="gradientText "> Uvini</span>
+          <a class="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_' style={{ fontFamily: "Rancho", fontSize: "30px", color: "rgb(94 234 212)" }}>
+            Uvini R.
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,7 +41,7 @@ export default function Home() {
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#blog">
-                  Blog
+                  8 Random Facts
                 </a>
               </li>
             </ul>
@@ -50,15 +49,12 @@ export default function Home() {
         </div>
       </nav>
       <div className='container'>
-        <div className='row justify-content-center align-items-center vh-100 py-5'>
+        <div className='row py-5'>
           <div className='pt-5'>
-            <h1>Hi there, it's me <span className={styles.pink}> Uvini </span>👋</h1>
-          </div>
-          <div className='row justify-content-center'>
-            <Image className={styles.cover} src={cover} width={499} height={499} />
+            <h1 className='col-md-8 pt-5'>Hello 👋</h1>
           </div>
           <div>
-            <h3 className='px-3'>I never get tired of chasing after <span className={styles.pink}>learning machines</span>!!!</h3>
+            <h1 className='col-md-8 pt-2'> I'm <b>Uvini Ranweera</b> — an avid researcher who never gets tired of the pursuit of <span className={styles.gradientText}>learning machines</span>👩🏻‍💻</h1>
           </div>
         </div>
 
@@ -72,132 +68,94 @@ export default function Home() {
             </div>
             <div className="col-md-6">
               <div className='py-5 pt-5' >
-                <h2 id="about">Who am I 👀</h2>
+                <h2 id="about"> <span className="underline-text">W</span>HO AM I 👀</h2>
               </div>
-              <p>
-                I’m a final-year Business Science <span className={styles.blue}>undergraduate</span> 👩🏻‍🎓 at{" "}
-                <span className={styles.blue}>University of Moratuwa</span>, Sri Lanka 🇱🇰 . <br></br>
-                <br></br>
-                Basically, I support <span className={styles.blue}>data-driven decision-making 🔍 </span> by developing ML models.
-                And when it comes to <span className={styles.blue}>Natural Language Processing 📝</span>, my excitement hits the roof!
-              </p>
-              <div className="pt-5" style={{ fontSize: '20px' }}>
-                Delve deeper into my <a class="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_'><span className={styles.gradientText}><b>CV</b></span></a> to discover even more hidden skills 😁.
+              <div class="bio-wrapper">
+                <p>
+                  I’m a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
+                  <b>University of Moratuwa</b>, Sri Lanka 🇱🇰 <br></br>
+                  <br></br>
+                  Basically, I support data-driven decision-making 🔍 by developing ML models.
+                  And when it comes to   <span class="bio-text"><b>Natural Language Processing</b></span>, my excitement hits the roof!
+
+                  <span class="cartoon-character"></span>
+                </p>
+              </div>              <div className="pt-3" style={{ fontSize: '18px' }}>
+                View my <a class="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_'><span className={styles.gradientText}><b>CV</b></span></a> for the full BLAH BLAH 😁
               </div>
             </div>
           </div>
         </div>
         <div className='text-center py-5' >
-          <h2 id='publications'> View my publications  🔬 </h2>
+          <h2 id='publications'> <span className="underline-text">P</span>UBLISHED WORK  🔬 </h2>
         </div>
-        <div className="container py-5">
-          <div className="row">
-            <div className="col-md-6">
-              <div class="card h-100 card-wrapper mx-auto" style={{ width: '75%', border: '5px solid #EF4573', backgroundColor: '#0F2437', color: 'white' }}>
-                <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
-                <div class="card-body pb-4">
-                  <p class="card-title fw-bold">Card title</p>
-                  <p class="card-text reduced-font-size">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div class="card h-100  card-wrapper mx-auto" style={{ width: '75%', border: '5px solid #0CB9C1', backgroundColor: '#0F2437', color: 'white' }}>
-                <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
-                <div class="card-body">
-                  <p class="card-title fw-bold">Card title</p>
-                  <p class="card-text reduced-font-size">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='text-center  py-5' style={{ fontSize: '20px' }}>
+
+        <div className='text-center  py-5' style={{ fontSize: '18px' }}>
           Feel free to explore <a class="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_'><span className={styles.gradientText}><b>Google Scholar </b></span></a>to find them in order.
         </div>
         <div className='text-center py-5' >
-          <h2 id='projects'> Academic projects 👩🏻‍💻</h2>
+          <h2 id='projects'> <span className="underline-text">A</span>CADEMIC PROJECTS 👩🏻‍💻</h2>
         </div>
-        <div className="container py-5">
-          <div className="row">
-            <div className="col-md-6">
-              <div class="card h-100 card-wrapper mx-auto" style={{ width: '75%', border: '5px solid #EF4573', backgroundColor: '#0F2437', color: 'white' }}>
-                <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
-                <div class="card-body">
-                  <p class="card-title fw-bold">Card title</p>
-                  <p class="card-text reduced-font-size">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                </div>
-              </div>
+        <div class="card-row  py-5">
+          <div class="card">
+            <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
+            <h3>Article Title 1</h3>
+            <p style={{ fontSize: '18px' }}>Summary of the article content goes here...</p>
+            <div class="badge-row">
+              < span class="badge">Badge Text</span>
+              < span class="badge">Badge Text</span>
+              < span class="badge">Badge Text</span>
             </div>
-            <div className="col-md-6">
-              <div class="card h-100  card-wrapper mx-auto" style={{ width: '75%', border: '5px solid #0CB9C1', backgroundColor: '#0F2437', color: 'white' }}>
-                <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
-                <div class="card-body pb-4">
-                  <p class="card-title fw-bold">Card title</p>
-                  <p class="card-text reduced-font-size">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                  <span class="badge display-badge mx-1 bg-secondary">Technology 1</span>
-                </div>
-              </div>
+
+          </div>
+          <div class="card">
+            <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
+            <h3>Article Title 1</h3>
+            <p style={{ fontSize: '18px' }}>Summary of the article content goes here...</p>
+            <div class="badge-row">
+              < span class="badge">Badge Text</span>
+              < span class="badge">Badge Text</span>
+              < span class="badge">Badge Text</span>
             </div>
+
+          </div>
+          <div class="card">
+            <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
+            <h3>Article Title 1</h3>
+            <p style={{ fontSize: '18px' }}>Summary of the article content goes here...</p>
+            <div class="badge-row">
+              < span class="badge">Badge Text</span>
+              < span class="badge">Badge Text</span>
+              < span class="badge">Badge Text</span>
+            </div>
+
           </div>
         </div>
-        <div className='text-center  py-5' style={{ fontSize: '20px' }}>
+
+        <div className='text-center  py-5' style={{ fontSize: '18px' }}>
           For an immersive experience, take a  stroll through my <a class="navbar-brand" href='https://github.com/UviniR' target='_'><span className={styles.gradientText}><b>GitHub repositories</b></span></a>.
         </div>
-        <div className='text-center py-5' >
-          <div className='mb-3' style={{ fontSize: '35px', fontFamily: 'Titillium Web' }}> Sometimes I write;  <h2 id='blog'> Read my stories 📖  </h2>
-          </div>
-        </div>
+
         <div className="container py-5">
-          <div className="row">
-            <div className="col-md-6">
-              <div class="card h-100 card-wrapper mx-auto" style={{ width: '75%', border: '5px solid #EF4573', backgroundColor: '#0F2437', color: 'white' }}>
-                <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
-                <div class="card-body">
-                  <p class="card-title fw-bold">Card title</p>
-                  <p class="card-text reduced-font-size">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+          <div className="row justify-content-center align-items-center">
+            <div className="col-md-5 h-100">
+              <div className='mb-3' style={{ fontSize: '25px', fontFamily: 'Source Sans 3' }}>
+                <p style={{ fontSize: '25px', fontFamily: 'Source Sans 3' }}>When I'm not staring at a computer screen, you'll find me with a
+                  <span className={`${styles.travel} px-3`}>travel itinerary ✈️</span> </p>
               </div>
             </div>
-            <div className="col-md-6">
-              <div class="card h-100  card-wrapper mx-auto" style={{ width: '75%', border: '5px solid #0CB9C1', backgroundColor: '#0F2437', color: 'white' }}>
-                <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
-                <div class="card-body">
-                  <p class="card-title fw-bold">Card title</p>
-                  <p class="card-text reduced-font-size">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div className="col-md-7 mx-auto">
+              <div class="gallery-reel-wrapper">
+                <div class="gallery-reel">
+                  <img src="https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-122-641a1d50c5283.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 1" />
+                  <img src="https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-124-641a1d51138cd.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 2" />
+                  <img src="https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-122-641a1d50c5283.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 3" />
                 </div>
               </div>
+
             </div>
           </div>
         </div>
-        <div className='text-center  py-5' style={{ fontSize: '20px' }}>
-          Hop on over to <a class="navbar-brand" href='https://medium.com/@uvini-ranaweera' target='_'><span className={styles.gradientText}><b> Medium </b></span></a>and feast your eyes on more stories.
-        </div>
-          <div className="container py-5">
-            <div className="row justify-content-center align-items-center">
-              <div className="col-md-5 h-100">
-                <div className='mb-3' style={{ fontSize: '35px', fontFamily: 'Titillium Web' }}>
-                  <p  style={{ fontSize: '35px', fontFamily: 'Titillium Web' }}>When I'm not engrossed in work, you'll find me with a </p>
-                  <span className={`${styles.travel} px-3`}>travel itinerary ✈️</span>
-                  {/* <p style = {{backgroundColor: '#F1A638'}}> travel itinerary✈️ </p> */}
-                  </div>
-              </div>
-              <div className="col-md-7 mx-auto">
-                <PhotoCarousel />
-              </div>
-            </div>
-          </div>
       </div>
     </main >
   )
