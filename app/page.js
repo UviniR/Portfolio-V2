@@ -56,7 +56,7 @@ export default function Home() {
             <h1 className='col-md-8 pt-5'>Hello 👋</h1>
           </div>
           <div>
-            <h1 className='col-md-8 pt-2'> I'm <b>Uvini Ranweera</b> — an avid researcher who never gets tired of the pursuit of <span className={styles.gradientText}>learning machines</span>👩🏻‍💻</h1>
+            <h1 className='col-md-8 pt-2'> I'm <b>Uvini Ranweera</b> — an avid researcher who never gets tired of chasing after <span className={styles.gradientText}>learning machines</span>👩🏻‍💻</h1>
           </div>
         </div>
 
@@ -70,34 +70,34 @@ export default function Home() {
             </div>
             <div className="col-md-6">
               <div className='py-5 pt-5' >
-                <h2 id="about"> <span className="underline-text">W</span>HO AM I 👀</h2>
+                <h2 id="about"> WHO AM I 👀</h2>
               </div>
               <div className="bio-wrapper">
                 <p>
                   I’m a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
                   <b>University of Moratuwa</b>, Sri Lanka 🇱🇰 <br></br>
                   <br></br>
-                  Basically, I support data-driven decision-making 🔍 by developing ML models.
-                  And when it comes to   <span className="bio-text"><b>Natural Language Processing</b></span>, my excitement hits the roof!
+                  Basically, I support data-driven decision-making 🤯  by developing Machine Learning models.
+                  And when it comes to <span className="bio-text"><b>Natural Language Processing</b></span>, my excitement hits the roof!
 
                   <span className="cartoon-character"></span>
                 </p>
               </div>
-              <div className="pt-3" style={{ fontSize: '18px' }}>
+              <div className="pt-3" style={{ fontSize: '20px'}}>
                 View my <a className="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_'><span className={styles.gradientText}><b>CV</b></span></a> for the full BLAH BLAH 😁
               </div>
             </div>
           </div>
         </div>
         <div className='text-center py-5' >
-          <h2 id='publications'> <span className="underline-text">P</span>UBLISHED WORK  🔬 </h2>
+          <h2 id='publications'> PUBLISHED WORK  🔬 </h2>
         </div>
 
         <div className='text-center  py-5' style={{ fontSize: '18px' }}>
           Feel free to explore <a className="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_'><span className={styles.gradientText}><b>Google Scholar </b></span></a>to find them in order.
         </div>
         <div className='text-center py-5' >
-          <h2 id='projects'> <span className="underline-text">A</span>CADEMIC PROJECTS 👩🏻‍💻</h2>
+          <h2 id='projects'> ACADEMIC PROJECTS 👩🏻‍💻</h2>
         </div>
         <div className="card-row  py-5">
           <div className="card">
