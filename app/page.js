@@ -3,6 +3,8 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import styles from '@styles/page.module.css'
 import cover from '@public/image.png'
+import TypewriterComponent from 'typewriter-effect';
+
 
 // import "aos/dist/aos.css"
 // import AOS from "aos"
@@ -14,33 +16,33 @@ export default function Home() {
 
   return (
     <main>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_' style={{ fontFamily: "Rancho", fontSize: "30px", color: "rgb(94 234 212)" }}>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div className="container">
+          <a className="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_' style={{ fontFamily: "Rancho", fontSize: "30px", color: "rgb(94 234 212)" }}>
             Uvini R.
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">
+          <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link" href="#about">
                   About
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#publications">
+              <li className="nav-item">
+                <a className="nav-link" href="#publications">
                   Publications
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">
+              <li className="nav-item">
+                <a className="nav-link" href="#projects">
                   Projects
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#blog">
+              <li className="nav-item">
+                <a className="nav-link" href="#blog">
                   8 Random Facts
                 </a>
               </li>
@@ -70,18 +72,19 @@ export default function Home() {
               <div className='py-5 pt-5' >
                 <h2 id="about"> <span className="underline-text">W</span>HO AM I 👀</h2>
               </div>
-              <div class="bio-wrapper">
+              <div className="bio-wrapper">
                 <p>
                   I’m a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
                   <b>University of Moratuwa</b>, Sri Lanka 🇱🇰 <br></br>
                   <br></br>
                   Basically, I support data-driven decision-making 🔍 by developing ML models.
-                  And when it comes to   <span class="bio-text"><b>Natural Language Processing</b></span>, my excitement hits the roof!
+                  And when it comes to   <span className="bio-text"><b>Natural Language Processing</b></span>, my excitement hits the roof!
 
-                  <span class="cartoon-character"></span>
+                  <span className="cartoon-character"></span>
                 </p>
-              </div>              <div className="pt-3" style={{ fontSize: '18px' }}>
-                View my <a class="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_'><span className={styles.gradientText}><b>CV</b></span></a> for the full BLAH BLAH 😁
+              </div>
+              <div className="pt-3" style={{ fontSize: '18px' }}>
+                View my <a className="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_'><span className={styles.gradientText}><b>CV</b></span></a> for the full BLAH BLAH 😁
               </div>
             </div>
           </div>
@@ -91,49 +94,49 @@ export default function Home() {
         </div>
 
         <div className='text-center  py-5' style={{ fontSize: '18px' }}>
-          Feel free to explore <a class="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_'><span className={styles.gradientText}><b>Google Scholar </b></span></a>to find them in order.
+          Feel free to explore <a className="navbar-brand" href='https://www.linkedin.com/in/uvini-ranaweera-/' target='_'><span className={styles.gradientText}><b>Google Scholar </b></span></a>to find them in order.
         </div>
         <div className='text-center py-5' >
           <h2 id='projects'> <span className="underline-text">A</span>CADEMIC PROJECTS 👩🏻‍💻</h2>
         </div>
-        <div class="card-row  py-5">
-          <div class="card">
-            <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
+        <div className="card-row  py-5">
+          <div className="card">
+            <Image className={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
             <h3>Article Title 1</h3>
             <p style={{ fontSize: '18px' }}>Summary of the article content goes here...</p>
-            <div class="badge-row">
-              < span class="badge">Badge Text</span>
-              < span class="badge">Badge Text</span>
-              < span class="badge">Badge Text</span>
+            <div className="badge-row">
+              < span className="badge">Badge Text</span>
+              < span className="badge">Badge Text</span>
+              < span className="badge">Badge Text</span>
             </div>
 
           </div>
-          <div class="card">
-            <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
+          <div className="card">
+            <Image className={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
             <h3>Article Title 1</h3>
             <p style={{ fontSize: '18px' }}>Summary of the article content goes here...</p>
-            <div class="badge-row">
-              < span class="badge">Badge Text</span>
-              < span class="badge">Badge Text</span>
-              < span class="badge">Badge Text</span>
+            <div className="badge-row">
+              < span className="badge">Badge Text</span>
+              < span className="badge">Badge Text</span>
+              < span className="badge">Badge Text</span>
             </div>
 
           </div>
-          <div class="card">
-            <Image class={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
+          <div className="card">
+            <Image className={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
             <h3>Article Title 1</h3>
             <p style={{ fontSize: '18px' }}>Summary of the article content goes here...</p>
-            <div class="badge-row">
-              < span class="badge">Badge Text</span>
-              < span class="badge">Badge Text</span>
-              < span class="badge">Badge Text</span>
+            <div className="badge-row">
+              < span className="badge">Badge Text</span>
+              < span className="badge">Badge Text</span>
+              < span className="badge">Badge Text</span>
             </div>
 
           </div>
         </div>
 
         <div className='text-center  py-5' style={{ fontSize: '18px' }}>
-          For an immersive experience, take a  stroll through my <a class="navbar-brand" href='https://github.com/UviniR' target='_'><span className={styles.gradientText}><b>GitHub repositories</b></span></a>.
+          For an immersive experience, take a  stroll through my <a className="navbar-brand" href='https://github.com/UviniR' target='_'><span className={styles.gradientText}><b>GitHub repositories</b></span></a>.
         </div>
 
         <div className="container py-5">
@@ -145,8 +148,8 @@ export default function Home() {
               </div>
             </div>
             <div className="col-md-7 mx-auto">
-              <div class="gallery-reel-wrapper">
-                <div class="gallery-reel">
+              <div className="gallery-reel-wrapper">
+                <div className="gallery-reel">
                   <img src="https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-122-641a1d50c5283.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 1" />
                   <img src="https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-124-641a1d51138cd.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 2" />
                   <img src="https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-122-641a1d50c5283.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 3" />
