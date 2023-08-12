@@ -1,6 +1,4 @@
 @import "@node_modules/bootstrap/dist/css/bootstrap.min.css";
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap'); */
 
 body {
   background-color: #0f172a;
@@ -92,16 +90,6 @@ nav.navbar .nav-link.active {
   -webkit-background-clip: text; 
   color: transparent;
 }
-
-/* .gradient-badge {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 5px;
-  background-image: linear-gradient(to right, #0CB9C1, #000000);
-  color: white;
-  text-align: center;
-  font-family: "Open Sans"
-} */
 
 .display-badge {
   display: inline-block;
@@ -201,3 +189,6 @@ nav.navbar .nav-link.active {
   background: #FCE694;
 }
 
+a{
+  text-decoration: none;
+}
