@@ -139,7 +139,7 @@ export default function Home() {
         </div>
 
 
-        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 my-3 py-2 card rounded border-0`}>
+        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 my-3 py-2 card rounded border-0 text-decoration-none`}>
           <div className="row align-items-center justify-content-center">
             <div className="col-md-8">
               <span className={`${styles.badge} badge mb-4`}> Conference Papaer</span>
@@ -161,7 +161,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 py-2 card rounded border-0`}>
+        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 py-2 card rounded border-0 text-decoration-none`}>
           <div className="row align-items-center justify-content-center">
             <div className="col-md-8">
               <span className={`${styles.badge} badge mb-4`}> Conference Papaer</span>
