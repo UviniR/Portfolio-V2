@@ -2,11 +2,12 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import styles from "@styles/page.module.css";
-import cover from "@public/image.png";
+import cover from "@public/3.png";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
-import { FaKaggle } from "react-icons/fa";
+import { FaKaggle, FaExternalLinkAlt } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
+import {FiGithub} from "react-icons/fi"
 import Link from "next/link";
 
 // import "aos/dist/aos.css"
@@ -101,7 +102,7 @@ export default function Home() {
             </div>
             <div className="col-md-6">
               <div className="py-5 pt-5">
-                <h2 id="about"> WHO AM I 👀</h2>
+                <h2 id="about" className="rounded"> WHO AM I 👀</h2>
               </div>
               <div className="bio-wrapper">
                 <p>
@@ -133,81 +134,77 @@ export default function Home() {
         </div>
         <div className="container">
           <div className="text-center py-5">
-            <h2 id="publications"> PUBLISHED WORK 🔬 </h2>
+            <h2 id="publications" className="rounded"> PUBLISHED WORK 🔬 </h2>
           </div>
+        </div>
 
-          </div>
-          <div className={`${styles.workCard} px-3 py-4 card rounded border-0`}>
-            <div className="row align-items-center justify-content-center">
-              <div className="col-md-8">
-                <p className={styles.date}>Conference Paper</p>
-                <p className={styles.title}>Comparative Evaluation of Classification Models for Reports on Digital Development</p>
-      
-              </div>
-              <div className="col-md-4 border-start ps-5">
-                <p className="fw-bold fs-6">DSAI 2023: 1st International Conference on Data Science & Artificial Intelligence</p>
-                <p className="fw-bold fs-6">27 Nov 2023</p>
-                <Link href={""} target="_" className={`text-decoration-none btn fw-bold fs-6 ${styles.buttonPaper}`}>
-                  Have a Read
-                </Link>
+
+        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 my-3 py-2 card rounded border-0`}>
+          <div className="row align-items-center justify-content-center">
+            <div className="col-md-8">
+              <span className={`${styles.badge} badge mb-4`}> Conference Papaer</span>
+              <h3 className="text-start">Comparative Evaluation of Classification Models for Reports on Digital Development</h3>
+            </div>
+            <div className="col-md-4 border-start ps-5">
+              <p style={{ fontSize: "18px" }} className="m-0">
+                DSAI 2023: 1st International Conference on Data Science & Artificial Intelligence
+              </p>
+              <div className="justify-content-between d-flex py-2">
+                <span style={{ fontSize: "15px", color:"#ccd6f6"}} className="m-0">
+                  27 Nov 2023
+                </span>
+                <span style={{color: "#ccd6f6"}}>
+                  <FaExternalLinkAlt className={styles.viewButton} size={15} />
+                </span>
               </div>
             </div>
           </div>
+        </Link>
 
-          <div className={`${styles.workCard} px-3 py-4 card rounded border-0`}>
-            <div className="row align-items-center justify-content-center">
-              <div className="col-md-8">
-              <span className="badge"> Conference Papaer</span>
-              <h3>Comparative Evaluation of Classification Models for Reports on Digital Development</h3>
-              </div>
-              <div className="col-md-4 border-start ps-5">
-                <p style={{ fontSize: "18px" }}>DSAI 2023: 1st International Conference on Data Science & Artificial Intelligence</p>
-                <p style={{ fontSize: "15px" }}>27 Nov 2023</p>
+        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 py-2 card rounded border-0`}>
+          <div className="row align-items-center justify-content-center">
+            <div className="col-md-8">
+              <span className={`${styles.badge} badge mb-4`}> Conference Papaer</span>
+              <h3 className="text-start">Comparative Evaluation of Classification Models for Reports on Digital Development</h3>
+            </div>
+            <div className="col-md-4 border-start ps-5">
+              <p style={{ fontSize: "18px" }} className="m-0">
+                DSAI 2023: 1st International Conference on Data Science & Artificial Intelligence
+              </p>
+              <div className="justify-content-between d-flex py-2">
+                <span style={{ fontSize: "15px", color:"#ccd6f6"}} className="m-0">
+                  27 Nov 2023
+                </span>
+                <span style={{color: "#ccd6f6"}}>
+                  <FaExternalLinkAlt className={styles.viewButton} size={15} />
+                </span>
               </div>
             </div>
           </div>
+        </Link>
 
-          <div className="text-center  py-5" style={{ fontSize: "18px" }}>
-            Feel free to explore{" "}
-            <a className="navbar-brand" href="https://www.linkedin.com/in/uvini-ranaweera-/" target="_">
-              <span className={styles.gradientText}>
-                <b>Google Scholar </b>
-              </span>
-            </a>
-            to find them in order.
+        <div className="text-center  py-5" style={{ fontSize: "18px" }}>
+          Feel free to explore{" "}
+          <a className="navbar-brand" href="https://www.linkedin.com/in/uvini-ranaweera-/" target="_">
+            <span className={styles.gradientText}>
+              <b>Google Scholar </b>
+            </span>
+          </a>
+          to find them in order.
         </div>
         <div className="text-center py-5">
-          <h2 id="projects"> ACADEMIC PROJECTS 👩🏻‍💻</h2>
+          <h2 id="projects" className="rounded"> ACADEMIC PROJECTS 👩🏻‍💻</h2>
         </div>
-        <div className={`${styles.cardRow}  py-5`}>
+        <div className={`${styles.cardRow}  py-3`}>
           <div className={styles.card}>
+            <Link href={""} target="_" className="d-flex justify-content-end"><FiGithub size={20} className={styles.gitIcon} /></Link>
             <Image className={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
             <h3>Article Title 1</h3>
             <p style={{ fontSize: "18px" }}>Summary of the article content goes here...</p>
-            <div className="badge-row">
-              <span className="badge">Badge Text</span>
-              <span className="badge">Badge Text</span>
-              <span className="badge">Badge Text</span>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <Image className={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
-            <h3>Article Title 1</h3>
-            <p style={{ fontSize: "18px" }}>Summary of the article content goes here...</p>
-            <div className="badge-row">
-              <span className="badge">Badge Text</span>
-              <span className="badge">Badge Text</span>
-              <span className="badge">Badge Text</span>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <Image className={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
-            <h3>Article Title 1</h3>
-            <p style={{ fontSize: "18px" }}>Summary of the article content goes here...</p>
-            <div className="badge-row">
-              <span className="badge">Badge Text</span>
-              <span className="badge">Badge Text</span>
-              <span className="badge">Badge Text</span>
+            <div className={styles.badgeRow}>
+              <span className={`${styles.badge} badge`}>Badge Text</span>
+              <span className={`${styles.badge} badge`}>Badge Text</span>
+              <span className={`${styles.badge} badge`}>Badge Text</span>
             </div>
           </div>
         </div>
@@ -227,7 +224,7 @@ export default function Home() {
             <div className="col-md-5 h-100">
               <div className="mb-3" style={{ fontSize: "25px", fontFamily: "Source Sans 3" }}>
                 <p style={{ fontSize: "25px", fontFamily: "Source Sans 3" }}>
-                  When I'm not staring at a computer screen, you'll find me with a<span className={`${styles.travel} px-3`}>travel itinerary ✈️</span>{" "}
+                  When I'm not staring at a computer screen, you'll find me with a <span className={`${styles.travel} px-2 rounded`}>travel itinerary ✈️</span>{" "}
                 </p>
               </div>
             </div>

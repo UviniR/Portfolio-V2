@@ -109,25 +109,6 @@ nav.navbar .nav-link.active {
   font-family: "Source Sans 3"
 } 
 
-.badge {
-  top: 10px;
-  right: 10px;
-  padding: 6px 12px;
-  background-color:rgba(45,212,191,.1);
-  color: rgb(94 234 212);
-  border-radius: 9999px;
-  font-size: 12px;
-  font-family: "Source Sans 3";
-  font-weight: 400;
-
-}
-
-.badge-row {
-  display: flex; /* Display badges in a row */
-  gap: 8px; /* Add some spacing between badges */
-  margin-top: 8px; /* Add spacing between content and badges */
-}
-
 .underline-text {
   display: inline-block;
   position: relative;
@@ -194,11 +175,11 @@ nav.navbar .nav-link.active {
 
 .cartoon-character {
   position: absolute;
-  top: 90%;
-  left: 60%;
+  top: 80%;
+  left: 40%;
   transform: translateX(-50%);
-  width: 150px;
-  height: 150px;
+  width: 85px;
+  height: 85px;
   background: url('../public/robot.png') center/contain no-repeat;
   opacity: 0;
   pointer-events: none;
