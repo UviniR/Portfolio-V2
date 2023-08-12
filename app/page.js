@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import styles from "@styles/page.module.css";
-import cover from "@public/3.png";
+import cover from "@public/read.svg";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaKaggle, FaExternalLinkAlt } from "react-icons/fa";
@@ -97,7 +97,7 @@ export default function Home() {
           <div className="row">
             <div className="col-md-6">
               <div className="row justify-content-center">
-                <Image className={styles.cover} src={cover} width={499} height={499} />
+                <Image className={styles.cover} src={cover} width={420} height={420} />
               </div>
             </div>
             <div className="col-md-6">
@@ -120,7 +120,7 @@ export default function Home() {
                   <span className="cartoon-character"></span>
                 </p>
               </div>
-              <div className="pt-3" style={{ fontSize: "20px" }}>
+              <div className="pt-3" style={{ fontSize: "18px" }}>
                 View my{" "}
                 <a className="navbar-brand" href="https://www.linkedin.com/in/uvini-ranaweera-/" target="_">
                   <span className={styles.gradientText}>
@@ -139,7 +139,7 @@ export default function Home() {
         </div>
 
 
-        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 my-3 py-2 card rounded border-0`}>
+        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 my-3 py-2 card rounded border-0 text-decoration-none`}>
           <div className="row align-items-center justify-content-center">
             <div className="col-md-8">
               <span className={`${styles.badge} badge mb-4`}> Conference Papaer</span>
@@ -161,7 +161,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 py-2 card rounded border-0`}>
+        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 py-2 card rounded border-0 text-decoration-none`}>
           <div className="row align-items-center justify-content-center">
             <div className="col-md-8">
               <span className={`${styles.badge} badge mb-4`}> Conference Papaer</span>
@@ -199,12 +199,13 @@ export default function Home() {
           <div className={styles.card}>
             <Link href={""} target="_" className="d-flex justify-content-end"><FiGithub size={20} className={styles.gitIcon} /></Link>
             <Image className={`card-img-top ${styles.cover}`} unoptimized src={cover} width={200} height={299} />
-            <h3>Article Title 1</h3>
-            <p style={{ fontSize: "18px" }}>Summary of the article content goes here...</p>
+            <h3 style={{ textAlign: "left"}}>Web App for Sentiment Analysis</h3>
+            <p style={{ fontSize: "18px" }}>Fine-tuned a pre-trained HuggingFace model for sentiment analysis of customer reviews received by a hotel.</p>
             <div className={styles.badgeRow}>
-              <span className={`${styles.badge} badge`}>Badge Text</span>
-              <span className={`${styles.badge} badge`}>Badge Text</span>
-              <span className={`${styles.badge} badge`}>Badge Text</span>
+              <span className={`${styles.badge} badge`}>NLP</span>
+              <span className={`${styles.badge} badge`}>PyTorch</span>
+              <span className={`${styles.badge} badge`}>HuggingFace</span>
+              <span className={`${styles.badge} badge`}>Streamlit</span>
             </div>
           </div>
         </div>
