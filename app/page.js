@@ -111,7 +111,7 @@ export default function Home() {
                   </Link>
                   , Sri Lanka 🇱🇰 <br></br>
                   <br></br>
-                  Basically, I support data-driven decision-making 🤯 by developing Machine Learning models. And when it comes to{" "}
+                  Basically, I support data-driven decision-making 🤯 by developing Machine Learning models. When it comes to{" "}
                   <span className="bio-text">
                     <b>Natural Language Processing</b>
                   </span>
@@ -136,6 +136,37 @@ export default function Home() {
             <h2 id="publications"> PUBLISHED WORK 🔬 </h2>
           </div>
 
+          </div>
+          <div className={`${styles.workCard} px-3 py-4 card rounded border-0`}>
+            <div className="row align-items-center justify-content-center">
+              <div className="col-md-8">
+                <p className={styles.date}>Conference Paper</p>
+                <p className={styles.title}>Comparative Evaluation of Classification Models for Reports on Digital Development</p>
+      
+              </div>
+              <div className="col-md-4 border-start ps-5">
+                <p className="fw-bold fs-6">DSAI 2023: 1st International Conference on Data Science & Artificial Intelligence</p>
+                <p className="fw-bold fs-6">27 Nov 2023</p>
+                <Link href={""} target="_" className={`text-decoration-none btn fw-bold fs-6 ${styles.buttonPaper}`}>
+                  Have a Read
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className={`${styles.workCard} px-3 py-4 card rounded border-0`}>
+            <div className="row align-items-center justify-content-center">
+              <div className="col-md-8">
+              <span className="badge"> Conference Papaer</span>
+              <h3>Comparative Evaluation of Classification Models for Reports on Digital Development</h3>
+              </div>
+              <div className="col-md-4 border-start ps-5">
+                <p style={{ fontSize: "18px" }}>DSAI 2023: 1st International Conference on Data Science & Artificial Intelligence</p>
+                <p style={{ fontSize: "15px" }}>27 Nov 2023</p>
+              </div>
+            </div>
+          </div>
+
           <div className="text-center  py-5" style={{ fontSize: "18px" }}>
             Feel free to explore{" "}
             <a className="navbar-brand" href="https://www.linkedin.com/in/uvini-ranaweera-/" target="_">
@@ -144,27 +175,6 @@ export default function Home() {
               </span>
             </a>
             to find them in order.
-          </div>
-          <div className={`${styles.workCard} px-3 py-4 card rounded border-0`}>
-            <div className="row align-items-center justify-content-center">
-              <div className="col-md-8">
-                <p className={styles.date}>Sep 2023</p>
-                <p className={styles.title}>title of the paper</p>
-                <div className="badge-row">
-                  <span className="badge">Badge Text</span>
-                  <span className="badge">Badge Text</span>
-                  <span className="badge">Badge Text</span>
-                </div>
-              </div>
-              <div className="col-md-4 border-start ps-5">
-                <p className="fw-bold fs-6">Thai Conference</p>
-                <p className="fw-bold fs-6">12 Sep 2023</p>
-                <Link href={""} target="_" className={`text-decoration-none btn fw-bold fs-6 ${styles.buttonPaper}`}>
-                  Have a Read
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
         <div className="text-center py-5">
           <h2 id="projects"> ACADEMIC PROJECTS 👩🏻‍💻</h2>
