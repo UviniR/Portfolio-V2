@@ -1,19 +1,30 @@
-import Image01 from "@public/assets/travel/IMG_0578.png"
-import Image02 from "@public/assets/travel/IMG_2275.png"
-import Image03 from "@public/assets/travel/IMG_0710.png"
+import Image01 from "@public/assets/travel/img5.png"
+import Image02 from "@public/assets/travel/img1.png"
+import Image03 from "@public/assets/travel/img2.png"
+import Image04 from "@public/assets/travel/img3.png"
+import Image05 from "@public/assets/travel/img4.png"
+
 
 const travelData = [
     {
-        place: "Sundara Nugegoda",
+        place: "Giza Pyramids, Egypt",
         img: Image01
     },
     {
-        place: "Sundara Egypthuwa",
+        place: "Gardens by the Bay, Singapore",
         img: Image02
     },
     {
-        place: "Sundara Nugegoda",
+        place: "Batu Caves, Malaysia",
         img: Image03
+    },
+    {
+        place: "Eifel Tower View, France",
+        img: Image04
+    },
+    {
+        place: "Madame Tussauds, United Kingdom",
+        img: Image05
     },
 ]
 
