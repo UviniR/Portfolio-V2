@@ -22,7 +22,7 @@ const travelData = [
         country: "Malaysia"
     },
     {
-        place: "Eifel Tower View",
+        place: "Eiffel Tower View",
         country: "France",
         img: Image04
     },

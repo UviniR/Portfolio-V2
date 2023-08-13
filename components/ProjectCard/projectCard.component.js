@@ -15,7 +15,7 @@ const ProjectCard = () => {
           </div>
           <Image className={`rounded ${styles.cover}`} unoptimized src={e.img} width={330} />
           <h3 style={{ textAlign: "left" }} className="pt-4">{e.title}</h3>
-          <p style={{ fontSize: "18px" }}>{e.desc}</p>
+          <p style={{  textAlign: "left", fontSize: "18px" }}>{e.desc}</p>
           <div className={styles.badgeRow}>
             {
                 e.technologies.map((t, i) => (

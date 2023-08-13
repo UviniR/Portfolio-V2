@@ -1,3 +1,24 @@
 .btn:hover{
     cursor: pointer;
 }
+
+.modal-content {
+    font-family:"Source Sans 3";
+  }
+  
+  .modal-title {
+    font-size: 25px!important;
+    color: #ccd6f6;;
+  }
+  
+  .modal-body {
+    font-size: 20px;
+    color:red;
+    background-color:#0f172a !important;
+  }
+  
+  .modal-body ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  

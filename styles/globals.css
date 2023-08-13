@@ -129,7 +129,7 @@ nav.navbar .nav-link.active {
   transform: translateX(-50%);
   width: 85px;
   height: 85px;
-  background: url('../public/robot.png') center/contain no-repeat;
+  background: url('../public/assets/robot.png') center/contain no-repeat;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;

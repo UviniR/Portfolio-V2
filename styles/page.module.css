@@ -113,7 +113,6 @@
 .card {
   width: calc(33.33% - 20px); /* Adjust the width based on the number of cards per row */
   padding: 20px;
-  /* background-color: #112240; */
   background: rgba(30, 41, 59, 0.4);
   border: 1px solid  rgba(30, 41, 59, 0.4);
   margin-bottom: 20px;

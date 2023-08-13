@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import styles from "@styles/page.module.css";
-import cover from "@public/read.svg";
+import cover from "@public/assets/read.svg";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaKaggle, FaExternalLinkAlt } from "react-icons/fa";
@@ -75,13 +75,13 @@ export default function Home() {
               </h1>
             </div>
             <div className="py-5 d-flex align-items-center">
-              <Link href={""} target="_blank" className={`${styles.icons} pe-4`}>
-                <AiFillGithub size={30} />
-              </Link>
-              <Link href={""} target="_blank" className={`${styles.icons} pe-4`}>
+              <Link href={"https://www.linkedin.com/in/uvini-ranaweera-/"} target="_blank" className={`${styles.icons} pe-4`}>
                 <BiLogoLinkedin size={30} />
               </Link>
-              <Link href={""} target="_blank" className={`${styles.icons} pe-4`}>
+              <Link href={"https://github.com/UviniR"} target="_blank" className={`${styles.icons} pe-4`}>
+                <AiFillGithub size={30} />
+              </Link>
+              <Link href={"https://www.kaggle.com/uvinir"} target="_blank" className={`${styles.icons} pe-4`}>
                 <FaKaggle size={30} />
               </Link>
               <Link href={""} target="_blank" className={`${styles.icons} pe-4`}>
@@ -90,10 +90,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container pb-5">
+        <div className="container mt-2 pb-5">
           <div className="row align-items-center">
             <div className="col-md-6">
-              <Link href={""} target="_" className="row justify-content-center">
+              <Link href={"https://online.fliphtml5.com/jqdru/emhr/#p=1"} target="_blank" className="row justify-content-center">
                 <Image className={styles.cover} src={cover} width={360} height={360} />
               </Link>
             </div>

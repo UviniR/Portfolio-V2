@@ -20,7 +20,7 @@ const projects = [
     },
     {
         title: "NYC Yellow Taxi Trips Analysis",
-        desc: "Runnning Python commands on a Apache Hadoop cluster to pre-process and analyse Big Data.",
+        desc: "Used Python commands on a Apache Hadoop cluster to pre-process and analyse Big Data.",
         technologies: ["GCP", "DataProc", "PySpark"],
         img: Image03,
         link: "https://github.com/UviniR/NYC-Yellow-Taxi-Trips"

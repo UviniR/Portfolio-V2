@@ -63,7 +63,7 @@ const TravelCard = () => {
   };
 
   return (
-    <div className="d-flex w-100 px-5 align-items-center overflow-scroll justify-content-start">
+    <div className="d-flex w-100 align-items-center overflow-scroll justify-content-start">
       {/* <div className={`${styles.beforeCard} d-md-none d-lg-block col-lg-3 card p-0 text-center`} style={{ backgroundImage: `url(${travelData[prevIdx].img.src})` }}></div> */}
 
       {/* <div className={`${styles.card}  col-lg-6 card p-0 text-center`} style={{ backgroundImage: `url(${travelData[currentIdx].img.src})` }}>
