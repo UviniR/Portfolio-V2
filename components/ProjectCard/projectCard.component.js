@@ -9,12 +9,12 @@ const ProjectCard = () => {
   return (
     <>
       {projects.map((e, idx) => (
-        <Link  href={""} target="_" className={`${styles.card} my-2 text-decoration-none`} key={idx}>
+        <Link  href={e.link} target="_" className={`${styles.card} rounded my-2 text-decoration-none text-center`} key={idx}>
           <div className="d-flex justify-content-end">
             <FiGithub size={20} className={styles.gitIcon} />
           </div>
-          <Image className={`card-img-top ${styles.cover}`} unoptimized src={e.img} width={200} height={299} />
-          <h3 style={{ textAlign: "left" }}>{e.title}</h3>
+          <Image className={`rounded ${styles.cover}`} unoptimized src={e.img} width={330} />
+          <h3 style={{ textAlign: "left" }} className="pt-4">{e.title}</h3>
           <p style={{ fontSize: "18px" }}>{e.desc}</p>
           <div className={styles.badgeRow}>
             {

@@ -1,5 +1,6 @@
 .cover {
   object-fit: contain;
+  margin-top: 1.5rem;
 }
 
 .gradientText {
@@ -55,6 +56,8 @@
   transition: 0.3s;
   padding-left: 1rem;
   padding-right: 1rem;
+  animation: shake 1s;
+  animation-iteration-count: 5;
 }
 
 .shake:hover {
@@ -78,20 +81,6 @@
 }
 
 .uomLink:hover{
-  color: rgb(94 234 212);
-}
-
-.workCard {
-  width: 100%;
-  background: transparent;
-}
-
-.workCard:hover{
-  background: rgba(30, 41, 59, 0.4);
-  /* background: #112240; */
-}
-
-.workCard:hover .title{
   color: rgb(94 234 212);
 }
 
@@ -119,7 +108,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
 }
 
 .card {
@@ -157,10 +145,4 @@
   display: flex; /* Display badges in a row */
   gap: 8px; /* Add some spacing between badges */
   margin-top: 8px; /* Add spacing between content and badges */
-}
-
-.workCard:hover .viewButton{
- color: rgb(94 234 212);
- margin-top: -10px;
- transition: 0.3s;
 }

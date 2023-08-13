@@ -7,23 +7,28 @@ import Image05 from "@public/assets/travel/img4.png"
 
 const travelData = [
     {
-        place: "Giza Pyramids, Egypt",
-        img: Image01
+        place: "Giza Pyramids",
+        img: Image01,
+        country: "Egypt"
     },
     {
-        place: "Gardens by the Bay, Singapore",
-        img: Image02
+        place: "Gardens by the Bay",
+        img: Image02,
+        country: "Singapore"
     },
     {
-        place: "Batu Caves, Malaysia",
-        img: Image03
+        place: "Batu Caves",
+        img: Image03,
+        country: "Malaysia"
     },
     {
-        place: "Eifel Tower View, France",
+        place: "Eifel Tower View",
+        country: "France",
         img: Image04
     },
     {
-        place: "Madame Tussauds, United Kingdom",
+        place: "Madame Tussauds",
+        country: "United Kingdom",
         img: Image05
     },
 ]

@@ -10,6 +10,8 @@ import { SiGooglescholar } from "react-icons/si";
 import Link from "next/link";
 import TravelCard from "@components/TravelCard/travelCard.component";
 import ProjectCard from "@components/ProjectCard/projectCard.component";
+import Publication from "@components/Publications/publication.component";
+import Footer from "@components/Footer/footer.component";
 
 export default function Home() {
 
@@ -139,49 +141,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 my-3 py-2 card rounded border-0 text-decoration-none`}>
-          <div className="row align-items-center justify-content-center">
-            <div className="col-md-8">
-              <span className={`${styles.badge} badge mb-4`}> Conference Papaer</span>
-              <h3 className="text-start">Comparative Evaluation of Classification Models for Reports on Digital Development</h3>
-            </div>
-            <div className="col-md-4 border-start ps-5">
-              <p style={{ fontSize: "18px" }} className="m-0">
-                DSAI 2023: 1st International Conference on Data Science & Artificial Intelligence
-              </p>
-              <div className="justify-content-between d-flex py-2">
-                <span style={{ fontSize: "15px", color: "#ccd6f6" }} className="m-0">
-                  27 Nov 2023
-                </span>
-                <span style={{ color: "#ccd6f6" }}>
-                  <FaExternalLinkAlt className={styles.viewButton} size={15} />
-                </span>
-              </div>
-            </div>
-          </div>
-        </Link>
-
-        <Link href={""} target="_" className={`${styles.workCard} my-3 px-3 py-2 card rounded border-0 text-decoration-none`}>
-          <div className="row align-items-center justify-content-center">
-            <div className="col-md-8">
-              <span className={`${styles.badge} badge mb-4`}> Conference Papaer</span>
-              <h3 className="text-start">Comparative Evaluation of Classification Models for Reports on Digital Development</h3>
-            </div>
-            <div className="col-md-4 border-start ps-5">
-              <p style={{ fontSize: "18px" }} className="m-0">
-                DSAI 2023: 1st International Conference on Data Science & Artificial Intelligence
-              </p>
-              <div className="justify-content-between d-flex py-2">
-                <span style={{ fontSize: "15px", color: "#ccd6f6" }} className="m-0">
-                  27 Nov 2023
-                </span>
-                <span style={{ color: "#ccd6f6" }}>
-                  <FaExternalLinkAlt className={styles.viewButton} size={15} />
-                </span>
-              </div>
-            </div>
-          </div>
-        </Link>
+        <Publication />
 
         <div className="text-center  py-5" style={{ fontSize: "18px" }}>
           Feel free to explore{" "}
@@ -243,6 +203,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
