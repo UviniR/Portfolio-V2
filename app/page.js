@@ -52,7 +52,7 @@ export default function Home() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#blog">
-                  8 Random Facts
+                  8 Random Facts 🎉
                 </a>
               </li>
             </ul>

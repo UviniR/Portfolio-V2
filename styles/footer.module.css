@@ -7,14 +7,18 @@
 }
 
 .background {
-  background-color: rgba(15, 23, 42, 0.6);
+  background-color: rgba(15, 23, 42, 0.7);
 }
 
 .card {
-  font-size: 20px;
   background-color: rgba(15, 23, 42);
   border-color: rgba(15, 23, 42);
-  box-shadow: 0 4px 8px rgba(45, 212, 191, .1);
+  box-shadow: 0 4px 8px rgba(45, 212, 190, 0.362);
+}
+
+.titlecard {
+  background-color:rgba(94, 234, 213, 0.595);
+  border-color: rgba(15, 23, 42);
 }
 
 .list {
@@ -23,9 +27,9 @@
 }
 
 .titles {
-  color: rgb(94, 234, 212);
-  background-color: rgba(45, 212, 191, .1);
+  color:  rgba(15, 23, 42);
   padding: 2px; 
   font-weight: 1000;
+  font-size: 20px;
   font-family: "Source Sans 3"
 }
