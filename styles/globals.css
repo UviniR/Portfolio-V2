@@ -103,7 +103,6 @@ nav.navbar .nav-link.active {
 
 .bio-text {
   cursor: pointer;
-  /* Add this line to transition the gradient text effect */
   transition: background-image 0.3s ease-in-out;
 }
 
@@ -115,7 +114,6 @@ nav.navbar .nav-link.active {
 }
 
 .bio-text:hover {
-  /* Apply the gradient text effect on hover */
   background-image: linear-gradient(to right, #646ffe, #14b2fa);
   background-clip: text;
   -webkit-background-clip: text;
