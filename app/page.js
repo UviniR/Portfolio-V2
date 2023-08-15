@@ -12,53 +12,12 @@ import TravelCard from "@components/TravelCard/travelCard.component";
 import ProjectCard from "@components/ProjectCard/projectCard.component";
 import Publication from "@components/Publications/publication.component";
 import Footer from "@components/Footer/footer.component";
+import Navbar from "@components/Navbar/navbar.component";
 
 export default function Home() {
-
   return (
     <main>
-      <nav className={`navbar navbar-expand-lg fixed-top ${styles.navbar}`}>
-        <div className="container px-5">
-          <a className={`navbar-brand ${styles.navbarBrand}`} href="https://www.linkedin.com/in/uvini-ranaweera-/" target="_">
-            Uvini R.
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link" href="#about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#publications">
-                  Publications
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#projects">
-                  Projects
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#blog">
-                  8 Random Facts 🎉
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
       <div className="container px-5">
         <div className="vh-100 row align-items-center">
           <div className="row py-5">

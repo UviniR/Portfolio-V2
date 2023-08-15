@@ -151,3 +151,7 @@ nav.navbar .nav-link.active {
 a{
   text-decoration: none;
 }
+
+.btn-close{
+  color: white !important;
+}

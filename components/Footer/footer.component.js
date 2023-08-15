@@ -20,12 +20,12 @@ const Footer = () => {
       </div>
 
       <Modal show={show} onHide={handleClose} centered size="lg" className={`${styles.background}`}>
-        <Modal.Header closeButton className={`modal-body ${styles.titlecard} px-5`}>
+        {/* <Modal.Header closeButton className={`modal-body text-light ${styles.titlecard} px-5`}>
           <ModalTitle><span className={`px-2 ${styles.titles} rounded`}>8 RANDOM FACTS 🎉 </span></ModalTitle>
-        </Modal.Header>
+        </Modal.Header> */}
 
-        <Modal.Body className={`modal-body ${styles.card} px-5`}>
-
+        <Modal.Body className={`modal-body ${styles.card} px-5 py-5`}>
+        <h3 className={`text-start pb-3 ${styles.titles} rounded`}>8 RANDOM FACTS 🎉 </h3>
           <p style={{ fontSize: '18px' }}> <b>A blend of <span className="gradientText">my own judgments</span> + <span className="gradientText">what others say</span>.</b></p>
           <ol className={`${styles.list} py-2`}>
             <li>Life is all about <b>"Perfect magical moments 💜"</b></li>

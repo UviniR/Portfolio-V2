@@ -13,10 +13,9 @@ const ProjectCard = () => {
           <div className="d-flex justify-content-end">
             <FiGithub size={20} className={styles.gitIcon} />
           </div>
-
-          <Image className={`rounded ${styles.cover}`} unoptimized src={e.img} width={330} />
+          <Image className={`rounded ${styles.cover}`} unoptimized src={e.img} width={350} />
           <h3 style={{ textAlign: "left" }} className="pt-4">{e.title}</h3>
-          <p style={{  textAlign: "left", fontSize: "18px" }}>{e.desc}</p>
+          <p style={{ fontSize: "18px",textAlign: "left" }}>{e.desc}</p>
           <div className={styles.badgeRow}>
             {
                 e.technologies.map((t, i) => (
@@ -24,7 +23,6 @@ const ProjectCard = () => {
                 ))
             }
           </div>
-
         </Link>
       ))}
     </>
