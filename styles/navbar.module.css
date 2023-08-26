@@ -56,11 +56,3 @@
 .navLink.active {
   color: rgb(94 234 212);
 }
-
-.navbarBrand {
-  color: #ccd6f6;
-}
-
-.navbarBrand:hover {
-  color: #ccd6f6 !important;
-}
