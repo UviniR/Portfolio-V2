@@ -1,7 +1,7 @@
 .cover {
   object-fit: contain;
   margin-top: 1.5rem;
-  width: 100%;
+  width: 80%;
   height: 10%;
 }
 
@@ -88,6 +88,12 @@
 .buttonPaper:hover{
   background-color:rgb(94 234 212);
   color: #0f172a;
+}
+
+@media (min-width:992px){
+  .header{
+  height: 100vh;
+}
 }
 
 @media (max-width:568px) {

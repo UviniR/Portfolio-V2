@@ -1,11 +1,11 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import styles from "@styles/page.module.css";
 import cover from "@public/assets/read.svg";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
-import { FaKaggle, FaExternalLinkAlt } from "react-icons/fa";
+import { FaKaggle } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
 import Link from "next/link";
 import TravelCard from "@components/TravelCard/travelCard.component";
@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div className="container px-lg-5 px-4">
-        <div className="vh-md-100 py-5 py-md-0 row align-items-center">
+      <div className="container px-lg-5 px-4 py-5 py-lg-0">
+        <div className={`py-5 py-md-0 row align-items-center ${styles.header}`}>
           <div className="row py-lg-5 py-3">
             <div className="pt-lg-5">
               <h1 className="col-md-8 d-flex">
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container mt-lg-2 pb-md-5">
-          <div className="row align-items-center">
+          <div className="row align-items-lg-end align-items-center">
             <div className="col-md-6 my-3 my-lg-0">
               <Link href={"https://online.fliphtml5.com/jqdru/emhr/#p=1"} target="_blank" className="row justify-content-center">
                 <Image className={styles.cover} src={cover} />
@@ -64,7 +64,7 @@ export default function Home() {
                 </h2>
               </div>
               <div className="bio-wrapper">
-                <p className={styles.smallText}>
+                <p className={`${styles.smallText} text-center text-md-start`}>
                   I’m a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
                   <Link href={"http://uom.lk/business"} target={"_"} className={styles.uomLink}>
                     <b>University of Moratuwa</b>
@@ -79,7 +79,7 @@ export default function Home() {
                   <span className="cartoon-character"></span>
                 </p>
               </div>
-              <div className={`${styles.extraSmallText} pt-3`} style={{ fontSize: "18px" }}>
+              <div className={`${styles.extraSmallText} pt-3 text-center text-md-start`} style={{ fontSize: "18px" }}>
                 View my{" "}
                 <a className="navbar-brand" href="/resume.pdf" target="_">
                   <span className={styles.gradientText}>

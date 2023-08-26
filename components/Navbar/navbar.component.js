@@ -9,7 +9,14 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => {
+    setShow(true)
+    navBarCollapse()
+  };
+
+  const navBarCollapse = () => {
+    document.getElementById("navbarNavDropdown").classList.remove('show')
+  }
   return (
     <>
       <nav className={`navbar navbar-expand-lg fixed-top ${styles.navbar}`}>
@@ -31,17 +38,17 @@ const Navbar = () => {
           <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className={`nav-link ${styles.navLink}`} href="#about">
+                <a className={`nav-link ${styles.navLink}`} href="#about" onClick={_ => navBarCollapse()}>
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className={`nav-link ${styles.navLink}`} href="#publications">
+                <a className={`nav-link ${styles.navLink}`} href="#publications" onClick={_ => navBarCollapse()}>
                   Publications
                 </a>
               </li>
               <li className="nav-item">
-                <a className={`nav-link ${styles.navLink}`} href="#projects">
+                <a className={`nav-link ${styles.navLink}`} href="#projects" onClick={_ => navBarCollapse()}>
                   Projects
                 </a>
               </li>
