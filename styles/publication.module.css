@@ -29,3 +29,21 @@
   font-family: "Source Sans 3";
   font-weight: 400;
 }
+
+@media (max-width:568px) {
+ .workCard{
+  background: rgba(30, 41, 59, 0.4);
+ }
+
+ .title{
+  font-size: 16px !important;
+ }
+
+ .conference{
+  font-size: 14px !important;
+ }
+
+ .date{
+  font-size: 14px !important;
+ }
+}

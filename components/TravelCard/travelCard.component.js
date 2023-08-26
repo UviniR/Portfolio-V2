@@ -87,7 +87,7 @@ const TravelCard = () => {
         </button>
       </div> */}
       {travelData.map((e, idx) => (
-        <div className={`${styles.card} col-lg-6 mx-2 card p-0`} style={{ backgroundImage: `url(${e.img.src})` }} key={idx}>
+        <div className={`${styles.card} col-6 mx-2 card p-0`} style={{ backgroundImage: `url(${e.img.src})` }} key={idx}>
           <div className={styles.overlay}>
             <div className={`row px-3 justify-content-start align-items-end pb-4 ${styles.text}`}>
               <div>

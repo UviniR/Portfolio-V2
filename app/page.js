@@ -18,22 +18,22 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div className="container px-5">
-        <div className="vh-100 row align-items-center">
-          <div className="row py-5">
-            <div className="pt-5">
+      <div className="container px-lg-5 px-4">
+        <div className="vh-md-100 py-5 py-md-0 row align-items-center">
+          <div className="row py-lg-5 py-3">
+            <div className="pt-lg-5">
               <h1 className="col-md-8 d-flex">
                 Hello <div className={styles.shake}>👋</div>
               </h1>
             </div>
             <div>
-              <h1 className="col-md-8 py-5">
+              <h1 className={`col-md-8 py-lg-5 py-5 ${styles.coverText}`}>
                 {" "}
                 I'm <b>Uvini Ranaweera</b> — an avid researcher who never gets tired of chasing after{" "}
                 <span className={styles.gradientText}>learning machines</span>👩🏻‍💻
               </h1>
             </div>
-            <div className="py-5 d-flex align-items-center">
+            <div className="py-lg-5 py-3 d-flex align-items-center">
               <Link href={"https://www.linkedin.com/in/uvini-ranaweera-/"} target="_blank" className={`${styles.icons} pe-4`}>
                 <BiLogoLinkedin size={30} />
               </Link>
@@ -49,22 +49,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container mt-2 pb-5">
+        <div className="container mt-lg-2 pb-md-5">
           <div className="row align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-6 my-3 my-lg-0">
               <Link href={"https://online.fliphtml5.com/jqdru/emhr/#p=1"} target="_blank" className="row justify-content-center">
-                <Image className={styles.cover} src={cover} width={360} height={360} />
+                <Image className={styles.cover} src={cover} />
               </Link>
             </div>
-            <div className="col-md-6">
-              <div className="pb-5">
-                <h2 id="about" className="rounded">
+            <div className="col-md-6 my-3 my-lg-0">
+              <div className="pb-5 text-center text-md-start">
+                <h2 id="about" className={`rounded ${styles.largeText}`}>
                   {" "}
                   WHO AM I 👀
                 </h2>
               </div>
               <div className="bio-wrapper">
-                <p>
+                <p className={styles.smallText}>
                   I’m a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
                   <Link href={"http://uom.lk/business"} target={"_"} className={styles.uomLink}>
                     <b>University of Moratuwa</b>
@@ -79,9 +79,9 @@ export default function Home() {
                   <span className="cartoon-character"></span>
                 </p>
               </div>
-              <div className="pt-3" style={{ fontSize: "18px" }}>
+              <div className={`${styles.extraSmallText} pt-3`} style={{ fontSize: "18px" }}>
                 View my{" "}
-                <a className="navbar-brand" href="https://www.linkedin.com/in/uvini-ranaweera-/" target="_">
+                <a className="navbar-brand" href="/resume.pdf" target="_">
                   <span className={styles.gradientText}>
                     <b>CV</b>
                   </span>
@@ -92,8 +92,8 @@ export default function Home() {
           </div>
         </div>
         <div className="container">
-          <div className="text-center py-5">
-            <h2 id="publications" className="rounded">
+          <div className="text-center pb-3 pt-5">
+            <h2 id="publications" className={`rounded ${styles.largeText}`}>
               {" "}
               PUBLISHED WORK 🔬{" "}
             </h2>
@@ -102,7 +102,7 @@ export default function Home() {
 
         <Publication />
 
-        <div className="text-center  py-5" style={{ fontSize: "18px" }}>
+        <div className={`${styles.extraSmallText} text-center py-md-5 py-4`} style={{ fontSize: "18px" }}>
           Feel free to explore{" "}
           <a className="navbar-brand" href="https://www.linkedin.com/in/uvini-ranaweera-/" target="_">
             <span className={styles.gradientText}>
@@ -111,17 +111,17 @@ export default function Home() {
           </a>
           to find them in order.
         </div>
-        <div className="text-center py-5">
-          <h2 id="projects" className="rounded">
+        <div className="text-center py-md-5 pt-3">
+          <h2 id="projects" className={`rounded ${styles.largeText}`}>
             {" "}
             ACADEMIC PROJECTS 👩🏻‍💻
           </h2>
         </div>
-        <div className={`${styles.cardRow}  py-3`}>
+        <div className={`${styles.cardRow} row align-items-stretch py-3`}>
           <ProjectCard />
         </div>
 
-        <div className="text-center  py-5" style={{ fontSize: "18px" }}>
+        <div className={`text-center ${styles.smallText} py-lg-5`} style={{ fontSize: "18px" }}>
           For an immersive experience, take a stroll through my{" "}
           <a className="navbar-brand" href="https://github.com/UviniR" target="_">
             <span className={styles.gradientText}>
@@ -133,14 +133,14 @@ export default function Home() {
 
         <div className="container py-5">
           <div className="row justify-content-center align-items-center">
-            <div className="col-md-4 col-lg-5 h-100">
+            <div className="col-md-4 mb-2 mt-md-0 col-lg-5 h-100">
               <div className="mb-3" style={{ fontSize: "25px", fontFamily: "Source Sans 3" }}>
-                <p style={{ fontSize: "25px", fontFamily: "Source Sans 3" }}>
+                <p style={{ fontSize: "25px", fontFamily: "Source Sans 3" }} className={styles.largeText}>
                   When I'm not staring at a computer screen, you'll find me with a <span className={`${styles.travel} px-2 rounded`}>travel itinerary ✈️</span>{" "}
                 </p>
               </div>
             </div>
-            <div className="col-md-8 col-lg-7 d-flex justify-content-center">
+            <div className="col-md-8 mt-2 mt-md-0 col-lg-7 d-flex justify-content-center">
               {/* <div className="gallery-reel-wrapper">
                 <div className="gallery-reel">
                   <img

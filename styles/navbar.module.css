@@ -1,0 +1,66 @@
+.navBarIcon {
+  color: #ccd6f6 !important;
+  border: 1px solid transparent !important;
+}
+
+.navBarIcon:focus {
+  color: #ccd6f6 !important;
+  border: 1px solid transparent !important;
+  box-shadow: none;
+}
+
+.Icon{
+    color: #ccd6f6;
+}
+
+.navBarIcon:hover .Icon{
+    color: rgb(94 234 212);
+}
+
+.navBarIcon:hover {
+    color: #fefefe !important;
+    border: 1px solid transparent !important;
+    box-shadow: none;
+  }
+
+.navbarBrand:hover {
+  font-family: "Rancho";
+  font-size: 30px;
+  color: rgb(94 234 212) !important;
+}
+
+.navbarBrand {
+  background-image: linear-gradient(to right, #646ffe, #14b2fa) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+  font-family: "Rancho";
+  font-size: 30px;
+}
+
+.navbar {
+  background-color: #0f172af1 !important;
+  padding-top: 20px;
+}
+
+.navLink {
+  color: #ccd6f6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: rgb(94 234 212);
+}
+
+.navLink.active {
+  color: rgb(94 234 212);
+}
+
+.navbarBrand {
+  color: #ccd6f6;
+}
+
+.navbarBrand:hover {
+  color: #ccd6f6 !important;
+}

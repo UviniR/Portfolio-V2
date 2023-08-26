@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import styles from "@styles/page.module.css";
+import styles from "@styles/navbar.module.css";
 import modalStyles from "@styles/footer.module.css"
 import { Modal } from "react-bootstrap";
+import {CiMenuKebab} from "react-icons/ci"
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -12,12 +13,12 @@ const Navbar = () => {
   return (
     <>
       <nav className={`navbar navbar-expand-lg fixed-top ${styles.navbar}`}>
-        <div className="container px-5">
+        <div className="container px-lg-5">
           <a className={`navbar-brand ${styles.navbarBrand}`} href="https://www.linkedin.com/in/uvini-ranaweera-/" target="_">
             Uvini R.
           </a>
           <button
-            className="navbar-toggler"
+            className={`navbar-toggler px-0 ${styles.navBarIcon}`}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -25,27 +26,27 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className={styles.Icon}><CiMenuKebab className={styles.Icon} size={25} /> </span>
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#about">
+                <a className={`nav-link ${styles.navLink}`} href="#about">
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#publications">
+                <a className={`nav-link ${styles.navLink}`} href="#publications">
                   Publications
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#projects">
+                <a className={`nav-link ${styles.navLink}`} href="#projects">
                   Projects
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#blog" onClick={handleShow}>
+                <a className={`nav-link ${styles.navLink}`} href="#blog" onClick={handleShow}>
                   8 Random Facts 🎉
                 </a>
               </li>

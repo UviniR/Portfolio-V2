@@ -52,34 +52,6 @@ p {
   color: #ccd6f6;
 }
 
-nav.navbar {
-  background-color:  #0f172af1 !important;
-  padding-top: 20px;
-}
-
-nav.navbar .nav-link {
-  color: #ccd6f6; 
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-nav.navbar .nav-link:hover {
-  color: rgb(94 234 212);
-}
-
-nav.navbar .nav-link.active {
-  color:rgb(94 234 212); 
-}
-
-.navbar-brand {
-  color: #ccd6f6; 
-}
-
-.navbar-brand:hover {
-  color: #ccd6f6 !important; 
-}
-
-
 .reduced-font-size {
   font-size: 15px;
 }

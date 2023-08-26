@@ -13,14 +13,14 @@ const Publication = () => {
           <div className="row align-items-center justify-content-center">
             <div className="col-md-8">
               <span className={`${styles.badge} badge mb-4`}>{e.type}</span>
-              <h3 className="text-start">{e.title}</h3>
+              <h3 className={`text-start ${styles.title}`}>{e.title}</h3>
             </div>
-            <div className="col-md-4 border-start ps-5">
-              <p style={{ fontSize: "18px" }} className="m-0">
+            <div className="col-md-4 border-md-start-0 border-start ps-lg-5">
+              <p style={{ fontSize: "18px" }} className={`${styles.conference} m-0`}>
                 {e.conference}
               </p>
               <div className="justify-content-between d-flex py-2">
-                <span style={{ fontSize: "15px", color: "#ccd6f6" }} className="m-0">
+                <span style={{ fontSize: "15px", color: "#ccd6f6" }} className={`${styles.date} m-0`}>
                   {e.date}
                 </span>
                 <span style={{ color: "#ccd6f6" }}>
