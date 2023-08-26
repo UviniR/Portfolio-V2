@@ -15,7 +15,7 @@ const ProjectCard = () => {
               <FiGithub size={20} className={styles.gitIcon} />
             </div>
             <Image className={`rounded ${styles.cover}`} unoptimized src={e.img} />
-            <h3 className={`pt-4 text-lg-start ${styles.largeText}`}>
+            <h3 className={`pt-4 text-start ${styles.largeText}`}>
               {e.title}
             </h3>
             <p style={{ fontSize: "18px", textAlign: "left" }} className={styles.smallText}>{e.desc}</p>

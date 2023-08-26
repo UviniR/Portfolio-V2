@@ -17,7 +17,7 @@ const Footer = () => {
     <>
       <div className={`d-flex pt-3 pb-3 justify-content-end px-4 align-items-center`}>
         <div className="row justify-content-center text-start pt-3">
-          <p className={`m-0 pe-5 ${styles.footerText}`}>Homemade by yours truly <BsFillSuitHeartFill /> <br/><span className={styles.footerTag}>Sparked by <Link className={`text-decoration-none ${styles.Link}`} target="_" href={"https://www.kantwon.com/"}>Kantwon</Link> & <Link target="_" className={`text-decoration-none ${styles.Link}`} href={"https://brittanychiang.com/"}>Brittany.</Link></span></p>
+          <p className={`m-0 pe-5 ${styles.footerText}`}>Homemade by yours truly <BsFillSuitHeartFill /> <br/><span className={styles.footerTag}>Inspired by <Link className={`text-decoration-none ${styles.Link}`} target="_" href={"https://www.kantwon.com/"}>Kantwon</Link> & <Link target="_" className={`text-decoration-none ${styles.Link}`} href={"https://brittanychiang.com/"}>Brittany.</Link></span></p>
         </div>
         <div onClick={handleShow} className={`${styles.btn}`}>
           <Image src={box} width={80} height={85} />

@@ -135,28 +135,12 @@ export default function Home() {
           <div className="row justify-content-center align-items-center">
             <div className="col-md-4 mb-2 mt-md-0 col-lg-5 h-100">
               <div className="mb-3" style={{ fontSize: "25px", fontFamily: "Source Sans 3" }}>
-                <p style={{ fontSize: "25px", fontFamily: "Source Sans 3" }} className={styles.largeText}>
-                  When I'm not staring at a computer screen, you'll find me with a <span className={`${styles.travel} px-2 rounded`}>travel itinerary ✈️</span>{" "}
+                <p style={{ fontSize: "25px", fontFamily: "Source Sans 3" }} className={`${styles.largeText} text-center text-md-start`}>
+                  When I'm not staring at a computer screen, you'll find me with a <span className={`${styles.travel} px-2 rounded`}>{'travel\u00A0itinerary'} ✈️</span>{" "}
                 </p>
               </div>
             </div>
             <div className="col-md-8 mt-2 mt-md-0 col-lg-7 d-flex justify-content-center">
-              {/* <div className="gallery-reel-wrapper">
-                <div className="gallery-reel">
-                  <img
-                    src="https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-122-641a1d50c5283.jpg?crop=1xw:1xh;center,top&resize=980:*"
-                    alt="Image 1"
-                  />
-                  <img
-                    src="https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-124-641a1d51138cd.jpg?crop=1xw:1xh;center,top&resize=980:*"
-                    alt="Image 2"
-                  />
-                  <img
-                    src="https://hips.hearstapps.com/hmg-prod/images/2024-lamborghini-revuelto-122-641a1d50c5283.jpg?crop=1xw:1xh;center,top&resize=980:*"
-                    alt="Image 3"
-                  />
-                </div>
-              </div> */}
               <TravelCard />
             </div>
           </div>
