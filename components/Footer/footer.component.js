@@ -47,7 +47,7 @@ const Footer = () => {
               Here's how my career dreams changed as I grew up: Air Hostess, Doctor, Film Director, Accountant, Academic Reseracher (can be a Doctor* again!!!)
             </li>
             <li>Sometimes I am struck by a flash energy to binge-watch a TV series in just one day.</li>
-            <li>Matplotlib is like my classic favorite and Plotly is the new beat that gets my heart racing.</li>
+            <li>Matplotlib is like my classic favourite and Plotly is the new beat that gets my heart racing.</li>
             <li>Folks say that I have a tad less common sense.</li>
             <li>
               What if I'm just pretending all along? <b>(Jinx!)</b>

@@ -43,7 +43,7 @@ export default function Home() {
               <Link href={"https://www.kaggle.com/uvinir"} target="_blank" className={`${styles.icons} pe-4`}>
                 <FaKaggle size={30} />
               </Link>
-              <Link href={""} target="_blank" className={`${styles.icons} pe-4`}>
+              <Link href={"https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en"} target="_blank" className={`${styles.icons} pe-4`}>
                 <SiGooglescholar size={30} />
               </Link>
             </div>
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="container mt-lg-2 pb-md-5">
           <div className="row align-items-lg-end align-items-center">
             <div className="col-md-6 my-3 my-lg-0">
-              <Link href={"https://online.fliphtml5.com/jqdru/emhr/#p=1"} target="_blank" className="row justify-content-center">
+              <Link href={"https://lianemoriarty.com.au/Book/truly-madly-guilty-us/"} target="_blank" className="row justify-content-center">
                 <Image className={styles.cover} src={cover} />
               </Link>
             </div>
@@ -81,7 +81,7 @@ export default function Home() {
               </div>
               <div className={`${styles.extraSmallText} pt-3 text-center text-md-start`} style={{ fontSize: "18px" }}>
                 View my{" "}
-                <a className="navbar-brand" href="/resume.pdf" target="_">
+                <a className="navbar-brand" href="/Uvini Ranaweera CV.pdf" target="_">
                   <span className={styles.gradientText}>
                     <b>CV</b>
                   </span>
@@ -104,7 +104,7 @@ export default function Home() {
 
         <div className={`${styles.extraSmallText} text-center py-md-5 py-4`} style={{ fontSize: "18px" }}>
           Feel free to explore{" "}
-          <a className="navbar-brand" href="https://www.linkedin.com/in/uvini-ranaweera-/" target="_">
+          <a className="navbar-brand" href="https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en" target="_">
             <span className={styles.gradientText}>
               <b>Google Scholar </b>
             </span>
