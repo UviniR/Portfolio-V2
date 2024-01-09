@@ -81,7 +81,7 @@ export default function Home() {
               </div>
               <div className={`${styles.extraSmallText} pt-3 text-center text-md-start`} style={{ fontSize: "18px" }}>
                 View my{" "}
-                <a className="navbar-brand" href="/Uvini Ranaweera CV.pdf" target="_">
+                <a className="navbar-brand" href="/Uvini_CV.pdf" target="_">
                   <span className={styles.gradientText}>
                     <b>CV</b>
                   </span>
