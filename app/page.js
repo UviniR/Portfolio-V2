@@ -50,20 +50,19 @@ export default function Home() {
           </div>
         </div>
         <div className="container mt-lg-2 pb-md-5">
-          <div className="row align-items-lg-end align-items-center">
+          <div className={`row align-items-lg-center align-items-center ${styles.section}`}>
             <div className="col-md-6 my-3 my-lg-0">
               <Link href={"https://lianemoriarty.com.au/Book/truly-madly-guilty-us/"} target="_blank" className="row justify-content-center">
                 <Image className={styles.cover} src={cover} />
               </Link>
             </div>
             <div className="col-md-6 my-3 my-lg-0">
-              <div className="pb-5 text-center text-md-start">
+              <div className={`pb-5 text-center text-md-start`}>
                 <h2 id="about" className={`rounded ${styles.largeText}`}>
                   {" "}
                   WHO AM I 👀
                 </h2>
-              </div>
-              <div className="bio-wrapper">
+                <div className="bio-wrapper pt-5">
                 <p className={`${styles.smallText} text-center text-md-start`}>
                   I’m a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
                   <Link href={"http://uom.lk/business"} target={"_"} className={styles.uomLink}>
@@ -88,40 +87,38 @@ export default function Home() {
                 </a>{" "}
                 for the full BLAH BLAH 😁
               </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="text-center pb-3 pt-5">
+        <div className={`py-5 ${styles.section}`}>
+          <div className="text-center pb-5 pt-5">
             <h2 id="publications" className={`rounded ${styles.largeText}`}>
               {" "}
               PUBLISHED WORK 🔬{" "}
             </h2>
           </div>
+          <Publication />
+          <div className={`${styles.extraSmallText} text-center py-md-5 py-4`} style={{ fontSize: "18px" }}>
+            Feel free to explore{" "}
+            <a className="navbar-brand" href="https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en" target="_">
+              <span className={styles.gradientText}>
+                <b>Google Scholar </b>
+              </span>
+            </a>
+            to find them in order.
+          </div>
         </div>
 
-        <Publication />
-
-        <div className={`${styles.extraSmallText} text-center py-md-5 py-4`} style={{ fontSize: "18px" }}>
-          Feel free to explore{" "}
-          <a className="navbar-brand" href="https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en" target="_">
-            <span className={styles.gradientText}>
-              <b>Google Scholar </b>
-            </span>
-          </a>
-          to find them in order.
-        </div>
-        <div className="text-center py-md-5 pt-3">
+        <div className={`py-5 ${styles.section} text-center`}>
           <h2 id="projects" className={`rounded ${styles.largeText}`}>
             {" "}
             ACADEMIC PROJECTS 👩🏻‍💻
           </h2>
-        </div>
-        <div className={`${styles.cardRow} row align-items-stretch py-3`}>
-          <ProjectCard />
-        </div>
-
-        <div className={`text-center ${styles.smallText} py-lg-5`} style={{ fontSize: "18px" }}>
+          <div className={`${styles.cardRow} row align-items-stretch pt-5 pb-5`}>
+            <ProjectCard />
+          </div>
+           <div className={`text-center ${styles.smallText} py-lg-5`} style={{ fontSize: "18px" }}>
           For an immersive experience, take a stroll through my{" "}
           <a className="navbar-brand" href="https://github.com/UviniR" target="_">
             <span className={styles.gradientText}>
@@ -130,13 +127,17 @@ export default function Home() {
           </a>
           .
         </div>
+        </div>
 
-        <div className="container py-5">
-          <div className="row justify-content-center align-items-center">
+       
+
+        <div className={`py-5 ${styles.section}`}>
+          <div className=" py-5 row justify-content-center align-items-center">
             <div className="col-md-4 mb-2 mt-md-0 col-lg-5 h-100">
               <div className="mb-3" style={{ fontSize: "25px", fontFamily: "Source Sans 3" }}>
                 <p style={{ fontSize: "25px", fontFamily: "Source Sans 3" }} className={`${styles.largeText} text-center text-md-start`}>
-                  When I'm not staring at a computer screen, you'll find me with a <span className={`${styles.travel} px-2 rounded`}>{'travel\u00A0itinerary'} ✈️</span>{" "}
+                  When I'm not staring at a computer screen, you'll find me with a{" "}
+                  <span className={`${styles.travel} px-2 rounded`}>{"travel\u00A0itinerary"} ✈️</span>{" "}
                 </p>
               </div>
             </div>
