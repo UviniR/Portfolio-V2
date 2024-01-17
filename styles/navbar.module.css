@@ -56,3 +56,8 @@
 .navLink.active {
   color: rgb(94 234 212);
 }
+
+.close{
+  background-color: transparent;
+  border: transparent;
+}

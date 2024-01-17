@@ -6,6 +6,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaKaggle } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 import TravelCard from "@components/TravelCard/travelCard.component";
 import ProjectCard from "@components/ProjectCard/projectCard.component";
@@ -26,24 +27,24 @@ export default function Home() {
               </h1>
             </div>
             <div>
-              <h1 className={`col-md-8 py-lg-5 py-5 ${styles.coverText}`}>
+              <h1 className={`col-md-8 py-lg-5 py-md-2 ${styles.coverText}`}>
                 {" "}
                 I&apos;m <b>Uvini Ranaweera</b> — an avid researcher who never gets tired of chasing after{" "}
                 <span className={styles.gradientText}>learning machines</span>👩🏻‍💻
               </h1>
             </div>
             <div className="py-lg-5 py-3 d-flex align-items-center">
-              <Link href={"https://www.linkedin.com/in/uvini-ranaweera-/"} target="_blank" className={`${styles.icons} pe-4`}>
-                <BiLogoLinkedin size={30} />
+            <Link href={"mailto:ranaweeraraua.19@uom.lk"} target="_blank" className={`${styles.icons} pe-4`}>
+                <MdEmail size={24} />
               </Link>
-              <Link href={"https://github.com/UviniR"} target="_blank" className={`${styles.icons} pe-4`}>
-                <AiFillGithub size={30} />
+              <Link href={"https://www.linkedin.com/in/uvini-ranaweera-/"} target="_blank" className={`${styles.icons} pe-4`}>
+                <BiLogoLinkedin size={26} />
               </Link>
               <Link href={"https://www.kaggle.com/uvinir"} target="_blank" className={`${styles.icons} pe-4`}>
-                <FaKaggle size={30} />
+                <FaKaggle size={24} />
               </Link>
               <Link href={"https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en"} target="_blank" className={`${styles.icons} pe-4`}>
-                <SiGooglescholar size={30} />
+                <SiGooglescholar size={24} />
               </Link>
             </div>
           </div>
@@ -62,36 +63,36 @@ export default function Home() {
                   WHO AM I 👀
                 </h2>
                 <div className="bio-wrapper pt-5">
-                <p className={`${styles.smallText} text-center text-md-start`}>
-                  I’m a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
-                  <Link href={"http://uom.lk/business"} target={"_"} className={styles.uomLink}>
-                    <b>University of Moratuwa</b>
-                  </Link>
-                  , Sri Lanka 🇱🇰 <br></br>
-                  <br></br>
-                  Basically, I support data-driven decision-making 🤯 by developing Machine Learning models. When it comes to{" "}
-                  <span className="bio-text">
-                    <b>Natural Language Processing</b>
-                  </span>
-                  , my excitement hits the roof!
-                  <span className="cartoon-character"></span>
-                </p>
-              </div>
-              <div className={`${styles.extraSmallText} pt-3 text-center text-md-start`} style={{ fontSize: "18px" }}>
-                View my{" "}
-                <a className="navbar-brand" href="/Uvini_CV.pdf" target="_">
-                  <span className={styles.gradientText}>
-                    <b>CV</b>
-                  </span>
-                </a>{" "}
-                for the lowdown on my academic and professional journey 😁
-              </div>
+                  <p className={`${styles.smallText} text-center text-md-start`}>
+                    I’m a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
+                    <Link href={"http://uom.lk/business"} target={"_"} className={styles.uomLink}>
+                      <b>University of Moratuwa</b>
+                    </Link>
+                    , Sri Lanka 🇱🇰 <br></br>
+                    <br></br>
+                    Basically, I support data-driven decision-making 🤯 by developing Machine Learning models. When it comes to{" "}
+                    <span className="bio-text">
+                      <b>Natural Language Processing</b>
+                    </span>
+                    , my excitement hits the roof!
+                    <span className="cartoon-character"></span>
+                  </p>
+                </div>
+                <div className={`${styles.extraSmallText} pt-3 text-center text-md-start`} style={{ fontSize: "18px" }}>
+                  View my{" "}
+                  <a className="navbar-brand" href="/Uvini_CV.pdf" target="_">
+                    <span className={styles.gradientText}>
+                      <b>CV</b>
+                    </span>
+                  </a>{" "}
+                  for the lowdown on my academic and professional journey 😁
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className={`py-5 ${styles.section}`}>
-          <div className="text-center pb-5 pt-5">
+        <div className={`py-md-5 ${styles.section}`}>
+          <div className="text-center pt-md-2 pb-5">
             <h2 id="publications" className={`rounded ${styles.largeText}`}>
               {" "}
               PUBLISHED WORK 🔬{" "}
@@ -109,7 +110,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={`py-5 ${styles.section} text-center`}>
+        <div className={`pt-5 pb-md-5 ${styles.section} text-center`}>
           <h2 id="projects" className={`rounded ${styles.largeText}`}>
             {" "}
             ACADEMIC PROJECTS 👩🏻‍💻
@@ -117,20 +118,18 @@ export default function Home() {
           <div className={`${styles.cardRow} row align-items-stretch pt-5 pb-5`}>
             <ProjectCard />
           </div>
-           <div className={`text-center ${styles.smallText} py-lg-5`} style={{ fontSize: "18px" }}>
-          For an immersive experience, take a stroll through my{" "}
-          <a className="navbar-brand" href="https://github.com/UviniR" target="_">
-            <span className={styles.gradientText}>
-              <b>GitHub repositories</b>
-            </span>
-          </a>
-          .
-        </div>
+          <div className={`text-center ${styles.smallText} py-lg-4`} style={{ fontSize: "18px" }}>
+            For an immersive experience, take a stroll through my{" "}
+            <a className="navbar-brand" href="https://github.com/UviniR" target="_">
+              <span className={styles.gradientText}>
+                <b>GitHub repositories</b>
+              </span>
+            </a>
+            .
+          </div>
         </div>
 
-       
-
-        <div className={`py-5 ${styles.section}`}>
+        <div className={`py-md-5 ${styles.section}`}>
           <div className=" py-5 row justify-content-center align-items-center">
             <div className="col-md-4 mb-2 mt-md-0 col-lg-5 h-100">
               <div className="mb-3" style={{ fontSize: "25px", fontFamily: "Source Sans 3" }}>

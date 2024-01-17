@@ -76,3 +76,8 @@
     font-size: 14px !important;
   }
 }
+
+.close{
+  background-color: transparent;
+  border: transparent;
+}

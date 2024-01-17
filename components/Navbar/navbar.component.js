@@ -1,22 +1,22 @@
 "use client";
 import React, { useState } from "react";
 import styles from "@styles/navbar.module.css";
-import modalStyles from "@styles/footer.module.css"
+import modalStyles from "@styles/footer.module.css";
 import { Modal } from "react-bootstrap";
-import {CiMenuKebab} from "react-icons/ci"
+import { CiMenuKebab } from "react-icons/ci";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => {
-    setShow(true)
-    navBarCollapse()
+    setShow(true);
+    navBarCollapse();
   };
 
   const navBarCollapse = () => {
-    document.getElementById("navbarNavDropdown").classList.remove('show')
-  }
+    document.getElementById("navbarNavDropdown").classList.remove("show");
+  };
   return (
     <>
       <nav className={`navbar navbar-expand-lg fixed-top ${styles.navbar}`}>
@@ -33,28 +33,30 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className={styles.Icon}><CiMenuKebab className={styles.Icon} size={25} /> </span>
+            <span className={styles.Icon}>
+              <CiMenuKebab className={styles.Icon} size={25} />{" "}
+            </span>
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className={`nav-link ${styles.navLink}`} href="#about" onClick={_ => navBarCollapse()}>
+                <a className={`nav-link ${styles.navLink}`} href="#about" onClick={(_) => navBarCollapse()}>
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className={`nav-link ${styles.navLink}`} href="#publications" onClick={_ => navBarCollapse()}>
+                <a className={`nav-link ${styles.navLink}`} href="#publications" onClick={(_) => navBarCollapse()}>
                   Publications
                 </a>
               </li>
               <li className="nav-item">
-                <a className={`nav-link ${styles.navLink}`} href="#projects" onClick={_ => navBarCollapse()}>
+                <a className={`nav-link ${styles.navLink}`} href="#projects" onClick={(_) => navBarCollapse()}>
                   Projects
                 </a>
               </li>
               <li className="nav-item">
                 <a className={`nav-link ${styles.navLink}`} href="#blog" onClick={handleShow}>
-                  8 Random Facts 🎉
+                  8 Random Facts 🎁
                 </a>
               </li>
             </ul>
@@ -81,7 +83,8 @@ const Navbar = () => {
             <li>I am head over heels, a whopping 108% in love, love, loveeee with NLP even as a beginner!</li>
             <li>I am famous for my OCD, especially when it comes to keeping things super organised.</li>
             <li>
-              Here&apos;s how my career dreams changed as I grew up: Air Hostess, Doctor, Film Director, Accountant, Academic Reseracher (can be a Doctor* again!!!)
+              Here&apos;s how my career dreams changed as I grew up: Air Hostess, Doctor, Film Director, Accountant, Academic Reseracher (can be a Doctor*
+              again!!!)
             </li>
             <li>Sometimes I am struck by a flash energy to binge-watch a TV series in just one day.</li>
             <li>Matplotlib is like my classic favorite and Plotly is the new beat that gets my heart racing.</li>
@@ -90,6 +93,13 @@ const Navbar = () => {
               What if I&apos;m just pretending all along? <b>(Jinx!)</b>
             </li>
           </ol>
+          <div className="row justify-content-end">
+            <div className="col-2">
+              <button onClick={handleClose} className={`fs-2 py-0 px-5 ${styles.close}`}>
+                👉🏻
+              </button>
+            </div>
+          </div>
         </Modal.Body>
       </Modal>
     </>

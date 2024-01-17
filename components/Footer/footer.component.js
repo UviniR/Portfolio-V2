@@ -53,6 +53,13 @@ const Footer = () => {
               What if I&apos;m just pretending all along? <b>(Jinx!)</b>
             </li>
           </ol>
+          <div className="row justify-content-end">
+            <div className="col-2">
+              <button onClick={handleClose} className={`fs-2 py-0 px-5 ${styles.close}`}>
+                👉🏻
+              </button>
+            </div>
+          </div>
         </Modal.Body>
       </Modal>
     </>
