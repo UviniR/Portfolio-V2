@@ -54,8 +54,8 @@ const Footer = () => {
             </li>
           </ol>
           <div className="row justify-content-end">
-            <div className="col-2">
-              <button onClick={handleClose} className={`fs-2 py-0 px-5 ${styles.close}`}>
+            <div className="col-2 pe-5 pe-md-0">
+              <button onClick={handleClose} className={`fs-2 py-0 pe-3 px-lg-1 ${styles.close}`}>
                 👉🏻
               </button>
             </div>
