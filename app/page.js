@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import styles from "@styles/page.module.css";
@@ -29,7 +28,7 @@ export default function Home() {
             <div>
               <h1 className={`col-md-8 py-lg-5 py-5 ${styles.coverText}`}>
                 {" "}
-                I'm <b>Uvini Ranaweera</b> — an avid researcher who never gets tired of chasing after{" "}
+                I&apos;m <b>Uvini Ranaweera</b> — an avid researcher who never gets tired of chasing after{" "}
                 <span className={styles.gradientText}>learning machines</span>👩🏻‍💻
               </h1>
             </div>
@@ -53,7 +52,7 @@ export default function Home() {
           <div className={`row align-items-lg-center align-items-center ${styles.section}`}>
             <div className="col-md-6 my-3 my-lg-0">
               <Link href={"https://lianemoriarty.com.au/Book/truly-madly-guilty-us/"} target="_blank" className="row justify-content-center">
-                <Image className={styles.cover} src={cover} />
+                <Image className={styles.cover} src={cover} alt="cover" />
               </Link>
             </div>
             <div className="col-md-6 my-3 my-lg-0">
@@ -85,7 +84,7 @@ export default function Home() {
                     <b>CV</b>
                   </span>
                 </a>{" "}
-                for the full BLAH BLAH 😁
+                for the lowdown on my academic and professional journey 😁
               </div>
               </div>
             </div>
@@ -136,7 +135,7 @@ export default function Home() {
             <div className="col-md-4 mb-2 mt-md-0 col-lg-5 h-100">
               <div className="mb-3" style={{ fontSize: "25px", fontFamily: "Source Sans 3" }}>
                 <p style={{ fontSize: "25px", fontFamily: "Source Sans 3" }} className={`${styles.largeText} text-center text-md-start`}>
-                  When I'm not staring at a computer screen, you'll find me with a{" "}
+                  When I&apos;m not staring at a computer screen, you&apos;ll find me with a{" "}
                   <span className={`${styles.travel} px-2 rounded`}>{"travel\u00A0itinerary"} ✈️</span>{" "}
                 </p>
               </div>

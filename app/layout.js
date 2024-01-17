@@ -17,7 +17,7 @@ export const metadata = {
     default: siteMetaData.title,
   },
   description: siteMetaData.description,
-  keywords: ['Uvini', 'Ayathma', 'Ranaweera', siteMetaData.year, 'Portfolio', 'Personal', 'personal space',`uvinis space`, `uvini space`, 'uvini ranweera space',`uvini  ayathma's personal space`, `uvini's personal space`, `uvini ranaweera's personal space`, 'website', 'Uvini Ranaweera', 'Uvini Ayathma Ranaweera', 'Uvini Ayathma'],
+  keywords: ['Uvini', 'Ayathma', 'Ranaweera','Uvini Ranaweera', 'Uvini Ayathma', 'Uvini Ayathma Ranaweera', siteMetaData.year, 'Portfolio',`uvinis portfolio`, `uvini portfolio`, 'uvini ranweera portfolio',`uvini  ayathma's portfolio`, `uvini's portfolio`, `uvini ranaweera's portfolio`, 'website', 'Uvini Ranaweera', 'Uvini Ayathma Ranaweera', 'Uvini Ayathma'],
   authors: [{ name: 'Uvini Ranaweera (UviniR)', url: siteMetaData.url }],
   openGraph: {
     title: {

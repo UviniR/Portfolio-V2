@@ -14,7 +14,7 @@ const ProjectCard = () => {
             <div className="d-flex justify-content-end">
               <FiGithub size={20} className={styles.gitIcon} />
             </div>
-            <Image className={`rounded ${styles.cover}`} unoptimized src={e.img} />
+            <Image className={`rounded ${styles.cover}`} src={e.img} alt="projects" />
             <h3 className={`pt-4 text-start ${styles.largeText}`}>
               {e.title}
             </h3>

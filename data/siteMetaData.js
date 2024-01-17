@@ -1,8 +1,8 @@
 const siteMetaData = {
-    url: 'https://google.com',
-    title: `Uvini`,
-    description: 'This is the personal space of Uvini Ranaweera, a software engineer, translate ideas into functional code, delivering comprehensive and fully functional digital solutions',
-    year: '2023'
+    url: 'https://uvini-ranaweera.web.app/',
+    title: `Uvini Ranaweera`,
+    description: 'An NLP enthusiast who loves incorporating data analytics for data-driven decision-making',
+    year: '2024'
 }
 
 export default siteMetaData;

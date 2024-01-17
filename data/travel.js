@@ -1,10 +1,10 @@
 import Image01 from "@public/assets/travel/img5.png"
 import Image02 from "@public/assets/travel/img1.png"
 import Image03 from "@public/assets/travel/img2.png"
-import Image04 from "@public/assets/travel/img3.png"
-import Image05 from "@public/assets/travel/img4.png"
+import Image04 from "@public/assets/travel/img3.jpg"
+import Image05 from "@public/assets/travel/img4.jpg"
 import Image06 from "@public/assets/travel/img6.png"
-
+import Image07 from "@public/assets/travel/img7.jpg"
 
 const travelData = [
     {
@@ -23,18 +23,23 @@ const travelData = [
         country: "Malaysia"
     },
     {
-        place: "Eiffel Tower View",
+        place: "Eiffel Tower",
         country: "France",
         img: Image04
     },
     {
-        place: "Madame Tussauds",
+        place: "Big Ben",
         country: "United Kingdom",
         img: Image05
     },
     {
-        place: "Forbidden City",
+        place: "Wat Arun",
         img: Image06,
+        country: "Thailand"
+    },
+    {
+        place: "Forbidden City",
+        img: Image07,
         country: "China"
     },
 ]
