@@ -13,6 +13,8 @@ import ProjectCard from "@components/ProjectCard/projectCard.component";
 import Publication from "@components/Publications/publication.component";
 import Footer from "@components/Footer/footer.component";
 import Navbar from "@components/Navbar/navbar.component";
+import music from "@public/assets/music.gif";
+import MusicComponent from "@components/Music/music.component";
 
 export default function Home() {
   return (
@@ -34,7 +36,7 @@ export default function Home() {
               </h1>
             </div>
             <div className="py-lg-5 py-3 d-flex align-items-center">
-            <Link href={"mailto:ranaweeraraua.19@uom.lk"} target="_blank" className={`${styles.icons} pe-4`}>
+              <Link href={"mailto:ranaweeraraua.19@uom.lk"} target="_blank" className={`${styles.icons} pe-4`}>
                 <MdEmail size={24} />
               </Link>
               <Link href={"https://www.linkedin.com/in/uvini-ranaweera-/"} target="_blank" className={`${styles.icons} pe-4`}>
@@ -52,12 +54,14 @@ export default function Home() {
         <div className="container mt-lg-2 pb-md-5">
           <div className={`row align-items-lg-center align-items-center ${styles.section}`}>
             <div className="col-md-6 my-3 my-lg-0">
-              <Link href={"https://lianemoriarty.com.au/Book/truly-madly-guilty-us/"} target="_blank" className="row justify-content-center">
+              {/* <Link href={"https://lianemoriarty.com.au/Book/truly-madly-guilty-us/"} target="_blank" className="row justify-content-center">
                 <Image className={styles.cover} src={cover} alt="cover" />
-              </Link>
+              </Link> */}
+              <Image src={music} alt="music" className={styles.music} />
+              <MusicComponent />
             </div>
             <div className="col-md-6 my-3 my-lg-0">
-              <div className={`pb-5 text-center text-md-start`}>
+              <div className={`pb-3 text-center text-md-start`}>
                 <h2 id="about" className={`rounded ${styles.largeText}`}>
                   {" "}
                   WHO AM I 👀
@@ -135,7 +139,7 @@ export default function Home() {
               <div className="mb-3" style={{ fontSize: "25px", fontFamily: "Source Sans 3" }}>
                 <p style={{ fontSize: "25px", fontFamily: "Source Sans 3" }} className={`${styles.largeText} text-center text-md-start`}>
                   When I&apos;m not staring at a computer screen, you&apos;ll find me with a{" "}
-                  <span className={`${styles.travel} px-2 rounded`}>{"travel\u00A0itinerary"} ✈️</span>{" "}
+                  <span className={`${styles.travel} px-2 rounded`}>{"travel\u00A0itinerary\u00A0✈️"}</span>{" "}
                 </p>
               </div>
             </div>
