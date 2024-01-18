@@ -1,25 +1,33 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@styles/music.module.css";
 import { HiMiniSpeakerWave } from "react-icons/hi2";
 import { HiMiniSpeakerXMark } from "react-icons/hi2";
 
 const Music = () => {
-  var aud;
+  const [aud, setAud] = useState(null);
+
+  useEffect(() => {
+    setAud(document.getElementById("sound"))
+  },[])
 
   const play = () => {
-    aud = document.getElementById("sound");
     aud.play();
     document.getElementById("play").style.display = "none";
-    document.getElementById("stop").style.display = "block";
+    console.log(document.getElementsByName("stop"))
+    document.getElementsByName("stop").forEach(e => {
+        e.style.display = "block";
+    })
+    // document.getElementById("stop").style.display = "block";
   };
 
   const stop = () => {
-    aud = document.getElementById("sound");
     aud.pause();
     aud.currentTime = 0;
     document.getElementById("play").style.display = "block";
-    document.getElementById("stop").style.display = "none";
+    document.getElementsByName("stop").forEach(e => {
+        e.style.display = "none";
+    })
   };
   return (
     <>
@@ -28,7 +36,7 @@ const Music = () => {
           <button onClick={(_) => play()} id="play" className={styles.playBtn}>
             <HiMiniSpeakerWave size={25} color="#ccd6f6" />
           </button>
-          <button onClick={(_) => stop()} id="stop" className={styles.stopBtn}>
+          <button onClick={(_) => stop()} id="stop" className={styles.stopBtn} name="stop">
             <HiMiniSpeakerXMark size={25} color="#ccd6f6" />
           </button>
         </div>

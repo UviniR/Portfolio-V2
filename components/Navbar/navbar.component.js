@@ -1,17 +1,33 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@styles/navbar.module.css";
 import modalStyles from "@styles/footer.module.css";
 import { Modal } from "react-bootstrap";
 import { CiMenuKebab } from "react-icons/ci";
+import { HiMiniSpeakerXMark } from "react-icons/hi2";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
+  const [aud, setAud] = useState(null);
+
   const handleShow = () => {
     setShow(true);
     navBarCollapse();
+  };
+
+  useEffect(() => {
+    setAud(document.getElementById("sound"));
+  }, []);
+
+  const stop = () => {
+    console.log("clicked")
+    aud.pause();
+    aud.currentTime = 0;
+    document.getElementById("play").style.display = "block";
+    document.getElementsByName("stop").forEach((e) => {
+      e.style.display = "none";
+    });
   };
 
   const navBarCollapse = () => {
@@ -58,6 +74,11 @@ const Navbar = () => {
                 <a className={`nav-link ${styles.navLink}`} href="#blog" onClick={handleShow}>
                   8 Random Facts 🎁
                 </a>
+              </li>
+              <li>
+                <button onClick={(_) => stop()} id="stop" className={`${styles.stopBtn} nav-link`} name="stop">
+                  <HiMiniSpeakerXMark size={25} color="#ccd6f6" />
+                </button>
               </li>
             </ul>
           </div>

@@ -17,6 +17,7 @@ import music from "@public/assets/music.gif";
 import MusicComponent from "@components/Music/music.component";
 
 export default function Home() {
+
   return (
     <main>
       <Navbar />

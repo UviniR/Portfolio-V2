@@ -61,3 +61,7 @@
   background-color: transparent;
   border: transparent;
 }
+
+.stopBtn {
+  display: none;
+}
