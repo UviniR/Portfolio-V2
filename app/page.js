@@ -54,9 +54,6 @@ export default function Home() {
         <div className="container mt-lg-2 pb-md-5">
           <div className={`row align-items-lg-center align-items-center ${styles.section}`}>
             <div className="col-md-6 my-3 my-lg-0">
-              {/* <Link href={"https://lianemoriarty.com.au/Book/truly-madly-guilty-us/"} target="_blank" className="row justify-content-center">
-                <Image className={styles.cover} src={cover} alt="cover" />
-              </Link> */}
               <Image src={music} alt="music" className={styles.music} />
               <MusicComponent />
             </div>

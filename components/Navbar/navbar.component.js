@@ -85,9 +85,7 @@ const Navbar = () => {
         </div>
       </nav>
       <Modal show={show} onHide={handleClose} centered size="lg" className={`${styles.background}`}>
-        {/* <Modal.Header closeButton className={`modal-body text-light ${styles.titlecard} px-5`}>
-          <ModalTitle><span className={`px-2 ${styles.titles} rounded`}>8 RANDOM FACTS 🎁 </span></ModalTitle>
-        </Modal.Header> */}
+
 
         <Modal.Body className={`modal-body ${modalStyles.card} px-5 py-5`}>
           <h3 className={`text-start pb-3 ${modalStyles.titles} rounded`}>8 RANDOM FACTS 🎁 </h3>

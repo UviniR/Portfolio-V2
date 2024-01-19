@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import box from "@public/assets/box.gif";
 import styles from "@styles/footer.module.css";
 import { Button, Modal, ModalTitle } from "react-bootstrap";
-import {BsFillSuitHeartFill} from "react-icons/bs"
+import { BsFillSuitHeartFill } from "react-icons/bs"
 import Link from "next/link";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
     <>
       <div className={`d-flex pt-3 pb-3 justify-content-end px-4 align-items-center`}>
         <div className="row justify-content-center text-start pt-3">
-          <p className={`m-0 pe-5 ${styles.footerText}`}>Homemade by yours truly <BsFillSuitHeartFill /> <br/><span className={styles.footerTag}>Inspired by <Link className={`text-decoration-none ${styles.Link}`} target="_" href={"https://www.kantwon.com/"}>Kantwon</Link> & <Link target="_" className={`text-decoration-none ${styles.Link}`} href={"https://brittanychiang.com/"}>Brittany.</Link></span></p>
+          <p className={`m-0 pe-5 ${styles.footerText}`}>Homemade by yours truly <BsFillSuitHeartFill /> <br /><span className={styles.footerTag}>Inspired by <Link className={`text-decoration-none ${styles.Link}`} target="_" href={"https://www.kantwon.com/"}>Kantwon</Link> & <Link target="_" className={`text-decoration-none ${styles.Link}`} href={"https://brittanychiang.com/"}>Brittany.</Link></span></p>
         </div>
         <div onClick={handleShow} className={`${styles.btn}`}>
           <Image src={box} width={80} height={85} alt="box" />
@@ -25,9 +25,6 @@ const Footer = () => {
       </div>
 
       <Modal show={show} onHide={handleClose} centered size="lg" className={`${styles.background}`}>
-        {/* <Modal.Header closeButton className={`modal-body text-light ${styles.titlecard} px-5`}>
-          <ModalTitle><span className={`px-2 ${styles.titles} rounded`}>8 RANDOM FACTS 🎁 </span></ModalTitle>
-        </Modal.Header> */}
 
         <Modal.Body className={`modal-body ${styles.card} px-5 py-5`}>
           <h3 className={`text-start pb-3 ${styles.titles} ${styles.largeText} rounded`}>8 RANDOM FACTS 🎁 </h3>
