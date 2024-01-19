@@ -40,7 +40,7 @@ const Music = () => {
         </button>
       </div>
       <audio src="/background-music.mp3" id="sound" loop>
-        Your browser does not support the audio element.
+      Oh, snap! Your browser's got stage fright and won't play the audio element 🥱
       </audio>
     </>
   );
