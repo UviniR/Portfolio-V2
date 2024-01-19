@@ -24,7 +24,7 @@ const Navbar = () => {
     console.log("clicked")
     aud.pause();
     aud.currentTime = 0;
-    document.getElementById("play").style.display = "block";
+    document.getElementById("play").style.display = "inline";
     document.getElementsByName("stop").forEach((e) => {
       e.style.display = "none";
     });
