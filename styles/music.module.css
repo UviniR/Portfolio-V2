@@ -10,13 +10,10 @@
 .playBtn{
     background-color: transparent;
     border-radius: 10px;
-    border: 1px #ccd6f6 solid;
     padding-left: 5px;
+    border: transparent;
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
-.invisibleBorder {
-  border: none;
-}

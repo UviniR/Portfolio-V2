@@ -16,7 +16,7 @@ const Music = () => {
     document.getElementById("play").style.display = "none";
     console.log(document.getElementsByName("stop"))
     document.getElementsByName("stop").forEach(e => {
-        e.style.display = "block";
+        e.style.display = "inline";
     })
     // document.getElementById("stop").style.display = "block";
   };
@@ -24,7 +24,7 @@ const Music = () => {
   const stop = () => {
     aud.pause();
     aud.currentTime = 0;
-    document.getElementById("play").style.display = "block";
+    document.getElementById("play").style.display = "inline";
     document.getElementsByName("stop").forEach(e => {
         e.style.display = "none";
     })
@@ -42,10 +42,10 @@ const Music = () => {
         </div> */}
         <div className={`text-center fs-4 pt-3 ${styles.musicTxt}`}>
           <span style={{ marginRight: '20px' }}>Hit-up to add some beats to the feast!</span>
-          <button onClick={(_) => play()} id="play" className={`${styles.playBtn} ${styles.invisibleBorder}` }>
+          <button onClick={(_) => play()} id="play" className={`${styles.playBtn}`}>
             <HiMiniSpeakerWave size={25} color="#ccd6f6" />
           </button>
-          <button onClick={(_) => stop()} id="stop" className={`${styles.stopBtn} ${styles.invisibleBorder}`} name="stop">
+          <button onClick={(_) => stop()} id="stop" className={`${styles.stopBtn}`} name="stop">
            <HiMiniSpeakerXMark size={25} color="#ccd6f6" />
           </button>
         </div>

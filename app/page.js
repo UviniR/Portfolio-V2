@@ -60,7 +60,7 @@ export default function Home() {
               <Image src={music} alt="music" className={styles.music} />
               <MusicComponent />
             </div>
-            <div className="col-md-6 my-3 my-lg-0">
+            <div className="col-md-6 pt-5 pt-md-0 my-3 my-lg-0">
               <div className={`pb-3 text-center text-md-start`}>
                 <h2 id="about" className={`rounded ${styles.largeText}`}>
                   {" "}
