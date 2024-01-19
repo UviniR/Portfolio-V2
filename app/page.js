@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@styles/page.module.css";
-import cover from "@public/assets/read.svg";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaKaggle } from "react-icons/fa";

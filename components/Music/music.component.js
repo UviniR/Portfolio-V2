@@ -31,20 +31,29 @@ const Music = () => {
   };
   return (
     <>
-      <div className="row justify-content-center">
-        <div className="col-2">
+      {/* <div className="row justify-content-center"> */}
+        {/* <div className={`text-center fs-4 pt-3 ${styles.musicTxt}`}>Hit-up to add some beats to the feast!    
           <button onClick={(_) => play()} id="play" className={styles.playBtn}>
-            <HiMiniSpeakerWave size={25} color="#ccd6f6" />
+            <HiMiniSpeakerWave size={20} color="#ccd6f6" />
           </button>
           <button onClick={(_) => stop()} id="stop" className={styles.stopBtn} name="stop">
-            <HiMiniSpeakerXMark size={25} color="#ccd6f6" />
+            <HiMiniSpeakerXMark size={20} color="#ccd6f6" />
+          </button>
+        </div> */}
+        <div className={`text-center fs-4 pt-3 ${styles.musicTxt}`}>
+          <span style={{ marginRight: '20px' }}>Hit-up to add some beats to the feast!</span>
+          <button onClick={(_) => play()} id="play" className={`${styles.playBtn} ${styles.invisibleBorder}` }>
+            <HiMiniSpeakerWave size={25} color="#ccd6f6" />
+          </button>
+          <button onClick={(_) => stop()} id="stop" className={`${styles.stopBtn} ${styles.invisibleBorder}`} name="stop">
+           <HiMiniSpeakerXMark size={25} color="#ccd6f6" />
           </button>
         </div>
-      </div>
+      {/* </div> */}
       <audio src="/background-music.mp3" id="sound">
         Your browser does not support the audio element.
       </audio>
-      <div className={`text-center fs-4 pt-3 ${styles.musicTxt}`}>Hit-up to add some beats to the feast! 🔊</div>
+      {/* <div className={`text-center fs-4 pt-3 ${styles.musicTxt}`}>Hit-up to add some beats to the feast! 🔊</div> */}
     </>
   );
 };
