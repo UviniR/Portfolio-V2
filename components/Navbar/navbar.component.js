@@ -92,17 +92,17 @@ const Navbar = () => {
           <p style={{ fontSize: "18px" }}>
             {" "}
             <b>
-              A blend of <span className="gradientText">my own judgments</span> + <span className="gradientText">what others say</span>.
+              A blend of <span className="gradientText">my own judgements</span> + <span className="gradientText">what others say</span>.
             </b>
           </p>
           <ol className={`${modalStyles.list} py-2`}>
             <li>
               Life is all about <b>&quot;Perfect magical moments 💜&quot;</b>
             </li>
-            <li>I am head over heels, a whopping 108% in love, love, loveeee with NLP even as a beginner!</li>
+            <li>I am head over heels, a whopping 108% in love, love, loveeee with NLP!</li>
             <li>I am famous for my OCD, especially when it comes to keeping things super organised.</li>
             <li>
-              Here&apos;s how my career dreams changed as I grew up: Air Hostess, Doctor, Film Director, Accountant, Academic Reseracher (can be a Doctor*
+              Here&apos;s how my career dreams changed as I grew up: Air Hostess, Doctor, Film Director, Accountant, Professor (can be a Doctor*
               again!!!)
             </li>
             <li>Sometimes I am struck by a flash energy to binge-watch a TV series in just one day.</li>
