@@ -3,7 +3,6 @@
   border-radius: 10px;
   width: 270px;
   height: 360px;
-  /* background: url("../public/assets/Manasa.png"); */
   background-position: center;
   background-size: contain;
 }
@@ -13,7 +12,6 @@
   border-radius: 10px;
   width: 150px;
   height: 200px;
-  /* background: url("../public/assets/Manasa.png"); */
   background-position: center;
   background-size: contain;
 }
@@ -23,7 +21,6 @@
   border-radius: 10px;
   width: 150px;
   height: 200px;
-  /* background: url("../public/assets/Manasa.png"); */
   background-position: center;
   background-size: contain;
 }
@@ -54,27 +51,28 @@
 }
 
 .text {
-    color: #ccd6f6 !important;
+    color: #e4e4e7 !important;
     height: 100%;
-    font-size: 18px !important;
+    font-size: 14px !important;
     font-weight: bold;
     z-index: 3;
 }
 
 .textContent{
-  font-size: 18px !important;
+  font-size: 14px !important;
 }
 
 .arrowBtn{
   color: #0f172a;
-  background-color: #ccd6f6;
+  background-color: #e4e4e7;
   border-radius: 10px;
   border: 2px solid transparent;
 }
 
 .arrowBtn:hover{
-  color: #ccd6f6;
+  color: #e4e4e7;
   background-color: #0f172a;
-  border: 2px solid #ccd6f6;
+  border: 2px solid #e4e4e7;
   transition: 250ms;
 }
+

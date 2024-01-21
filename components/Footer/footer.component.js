@@ -17,22 +17,21 @@ const Footer = () => {
     <>
       <div className={`d-flex pt-3 pb-3 justify-content-end px-4 align-items-center`}>
         <div className="row justify-content-center text-start pt-3">
-          <p className={`m-0 pe-5 ${styles.footerText}`}>Homemade by yours truly <BsFillSuitHeartFill /> <br /><span className={styles.footerTag}>Inspired by <Link className={`text-decoration-none ${styles.Link}`} target="_" href={"https://www.kantwon.com/"}>Kantwon</Link> & <Link target="_" className={`text-decoration-none ${styles.Link}`} href={"https://brittanychiang.com/"}>Brittany.</Link></span></p>
+          <p className={`m-0 pe-5 ${styles.footerText}`}>Homemade by yours truly <BsFillSuitHeartFill /> <br /><span className={styles.footerTag}>Inspired by <Link className={`text-decoration-none ${styles.Link}`} target="_" href={"https://github.com/dsbalico/dsfolio"}>DSFolio</Link> </span></p>
         </div>
         <div onClick={handleShow} className={`${styles.btn}`}>
-          <Image src={box} width={80} height={85} alt="box" />
+          <Image src={box} width={70} height={75} alt="box" />
         </div>
       </div>
 
       <Modal show={show} onHide={handleClose} centered size="lg" className={`${styles.background}`}>
 
-        <Modal.Body className={`modal-body ${styles.card} px-5 py-5`}>
+        <Modal.Body className={`modal-body px-5 py-5`}>
           <h3 className={`text-start pb-3 ${styles.titles} ${styles.largeText} rounded`}>8 RANDOM FACTS 🎁 </h3>
-          <p style={{ fontSize: "18px" }} className={styles.smallText}>
+          <p className={styles.smallText}>
             {" "}
-            <b>
               A blend of <span className="gradientText">my own judgements</span> + <span className="gradientText">what others say</span>.
-            </b>
+      
           </p>
           <ol className={`${styles.list} py-2`}>
             <li>

@@ -1,67 +1,73 @@
-.navBarIcon {
-  color: #ccd6f6 !important;
-  border: 1px solid transparent !important;
-}
-
-.navBarIcon:focus {
-  color: #ccd6f6 !important;
-  border: 1px solid transparent !important;
-  box-shadow: none;
-}
-
-.Icon{
-    color: #ccd6f6;
-}
-
-.navBarIcon:hover .Icon{
-    color: rgb(94 234 212);
-}
-
-.navBarIcon:hover {
-    color: #fefefe !important;
-    border: 1px solid transparent !important;
-    box-shadow: none;
-  }
-
-.navbarBrand:hover {
-  font-family: "Rancho";
-  font-size: 30px;
-  color: rgb(94 234 212) !important;
-}
-
-.navbarBrand {
-  background-image: linear-gradient(to right, #646ffe, #14b2fa) !important;
-  background-clip: text !important;
-  -webkit-background-clip: text !important;
-  color: transparent !important;
-  font-family: "Rancho";
-  font-size: 30px;
+.navContainer {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .navbar {
-  background-color: #0f172af1 !important;
-  padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 3vh;
+	z-index: 999;
 }
 
-.navLink {
-  color: #ccd6f6;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.navBackground {
+	width: 380px;
+	height: 45px;
+	padding-left: 0%;
+	padding-right: 0%;
+	background: #fff;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 40px;
 }
 
-.navLink:hover {
-  color: rgb(94 234 212);
+.navList {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	align-items: center;
+	margin-left: -16px;
+	margin-right: 20px;
+	margin-top: 11px;
 }
 
-.navLink.active {
-  color: rgb(94 234 212);
+.navItem {
+	font-weight: bold;
+	font-size: 80%;
+	color: #acacb4;
+
 }
 
-.close{
-  background-color: transparent;
-  border: transparent;
+.navItem.active a {
+	color: #14b8a6 !important;
 }
 
-.stopBtn {
-  display: none;
+.navItem a {
+	text-decoration: none;
+}
+
+.navItem a:hover {
+	color: #14b8a6;
+	transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+	.navbar {
+		margin-left: 25%;
+		margin-right: 25%;
+		width: 80%;
+		font-size: 80%;
+	}
+
+	.navBackground {
+		width: 80%;
+		height: 40px;
+	}
+
+	.navItem {
+		font-weight: bold;
+	}
 }

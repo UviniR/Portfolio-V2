@@ -2,39 +2,32 @@
   cursor: pointer;
 }
 
-.modal-content {
-  font-family: "Source Sans 3";
-}
+/* .modal-content {
+  font-family: "Heebo", sans-serif;
+} */
 
 .background {
-  background-color: rgba(15, 23, 42, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.card {
-  background-color: rgba(15, 23, 42);
-  border-color: rgba(15, 23, 42);
-  box-shadow: 0 4px 8px 4px rgba(45, 212, 190, 0.362);
-}
 
 .titlecard {
   /* background-color:rgba(45, 212, 190, 0.362); */
-  background-color: rgba(15, 23, 42);
-  color: rgb(94 234 212);
-  border-color: rgba(15, 23, 42);
-  box-shadow: 0 0px 3px 3px rgba(45, 212, 190, 0.362);
+  background-color: rgb(255, 255, 255);
+  color: #14b8a6;
+  border-color: rgba(255, 255, 255);
+  /* box-shadow: 0 4px 8px 4px rgba(255, 255, 255, 0.362); */
 }
 
 .list {
-  line-height: 2;
-  font-size: 18px;
+  line-height: 2.5;
+  font-size: 100%;
 }
 
 .titles {
-  /* color:  rgba(15, 23, 42); */
   padding: 2px;
   font-weight: 1000;
-  font-size: 20px;
-  font-family: "Source Sans 3"
+  font-size: 110%;
 }
 
 .btn-close {
@@ -42,39 +35,40 @@
 }
 
 .footerText {
-  font-size: 16px;
+  font-size: 85%;
+  color: #65656d;
 }
 
 .footerTag {
-  font-size: 14px;
+  font-size: 100%;
+  color: #65656d;
 }
 
 .Link {
   font-weight: 500;
-  color: #ccd6f6;
+  color: #65656d;
+  font-size: 100%;
 }
 
 .Link:hover {
-  color: rgb(94 234 212);
+  color: #14b8a6;
   font-weight: 500;
 }
 
 @media (max-width: 568px) {
   .largeText {
-    font-size: 20px !important;
+    font-size: 110% !important;
   }
 
   .smallText {
-    font-size: 16px !important;
+    font-size: 100% !important;
   }
 
   .extraSmallText {
-    font-size: 14px !important;
+    font-size: 70% !important;
   }
 
-  .list {
-    font-size: 14px !important;
-  }
+
 }
 
 .close {

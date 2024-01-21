@@ -1,0 +1,85 @@
+
+.homepageArticle {
+	width: 100%;
+	mix-blend-mode: normal;
+	border-radius: 20px;
+	opacity: 0.8;
+}
+
+.homepageArticle:hover {
+	background: #fafafa;
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.homepageArticleContent {
+	padding: 30px;
+}
+
+.homepageArticleDate {
+	opacity: 1;
+	color: #acacb4;;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.homepageArticleTitle {
+	opacity: 1;
+	color:  #27272a;
+	font-size: 16px;
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+
+.homepageArticleDescription {
+	color: #27272a;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.homepageArticleLink {
+	opacity: 1;
+	margin-bottom: 1em;
+	font-weight: 700;
+	color: #65656d;
+	text-decoration: none;
+}
+
+
+.homepageArticleLink :hover {
+	color: #14b8a6;
+	text-decoration: none;
+}
+@media (max-width: 600px) {
+	.homepageArticle {
+		width: 100%;
+	}
+}
+
+
+.badgeRow {
+	gap: 7px; /* Add some spacing between badges */
+  }
+  
+  .badge {
+	top: 5px;
+	right: 8px;
+	padding: 6px 12px;
+	color: #14b8a6;
+	border-radius: 9999px;
+	font-weight: 400;
+	font-size: 12px;
+  }
+
+.projectLink {
+	display: flex;
+	align-items: center;
+	color: #65656d;
+	font-size: 12px;
+	padding-top: 20px;
+}
+
+.projectLinkIcon {
+	padding-left: 5px;
+	font-size: 13px;
+}
