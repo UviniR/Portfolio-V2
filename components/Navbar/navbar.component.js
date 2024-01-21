@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "@styles/navbar.module.css";
 
 
 const NavBar = (props) => {
-	const { active } = props;
+	const [active,setActive] = useState(props.active)
 
+	useEffect(() => {
+		setActive(props.active)
+	},[props])
 	return (
 		<React.Fragment>
-  
+			
 			<div className={styles.navContainer}>
 				<nav className={styles.navbar}>
 					<div className={styles.navBackground}>
 						<ul className={styles.navList}>
 							<li
 								className={
-									active === "about"
-										? "navItem active"
+									active === "home"
+										? styles.navItemActive
 										: "navItem"
 								}
 							>
@@ -24,8 +27,8 @@ const NavBar = (props) => {
 							</li>
 							<li
 								className={
-									active === "Publications"
-										? "navItem active"
+									active === "publications"
+										? styles.navItemActive
 										: "navItem"
 								}
 							>
@@ -34,7 +37,7 @@ const NavBar = (props) => {
 							<li
 								className={
 									active === "projects"
-										? "navItem active"
+										? styles.navItemActive
 										: "navItem"
 								}
 							>
