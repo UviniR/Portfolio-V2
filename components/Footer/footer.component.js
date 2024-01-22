@@ -27,7 +27,7 @@ const Footer = () => {
       <Modal show={show} onHide={handleClose} centered size="lg" className={`${styles.background}`}>
 
         <Modal.Body className={`modal-body px-5 py-5`}>
-          <h3 className={`text-start pb-3 ${styles.titles} ${styles.largeText} rounded`}>8 RANDOM FACTS 🎁 </h3>
+          <h3 className={`text-start pb-3 ${styles.titles} ${styles.largeText} rounded`}>9 RANDOM FACTS 🎁 </h3>
           <p className={styles.smallText}>
             {" "}
               A blend of <span className="gradientText">my own judgements</span> + <span className="gradientText">what others say</span>.
@@ -43,7 +43,9 @@ const Footer = () => {
               Here&apos;s how my career dreams changed as I grew up: Air Hostess, Doctor, Film Director, Accountant, Professor (can be a Doctor* again!!!)
             </li>
             <li>Sometimes I am struck by a flash energy to binge-watch a TV series in just one day.</li>
-            <li>Matplotlib is like my classic favourite and Plotly is the new beat that gets my heart racing.</li>
+            <li>Matplotlib is like my classic fav and Plotly is the new beat that gets my heart racing.</li>
+            <li>When I&apos;m not staring at a computer screen, you&apos;ll find me with a{" "}
+                      <span className="gradientText">{"travel itinerary"}</span> ✈️</li>
             <li>Folks say that I have a tad less common sense.</li>
             <li>
               What if I&apos;m just pretending all along? <b>(Jinx!)</b>
