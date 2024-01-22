@@ -175,7 +175,7 @@ a:active {
 		width: calc((100% - 90%) / 2);
 	}
 
-	.content-wrapper {
+	.content-wrapper{
 		max-width: 90%;
 		padding-left: 10%;
 		padding-right: 10%;
@@ -189,7 +189,7 @@ a:active {
 		width: calc((100% - 950px) / 2);
 	}
 
-	.content-wrapper {
+	.content-wrapper,.footerWrapper  {
 		max-width: 980px;
 	}
 }

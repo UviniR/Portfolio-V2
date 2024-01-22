@@ -12,18 +12,17 @@ import { SiGooglescholar } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { IoDocumentAttach } from "react-icons/io5";
 
-
 import styles from "@styles/homepage.module.css";
 
 const Homepage = () => {
   const [stayLogo, setStayLogo] = useState(false);
   const [logoSize, setLogoSize] = useState(80);
   const [oldLogoSize, setOldLogoSize] = useState(80);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   const handleNavbar = () => {
     const scrollPosition = window.scrollY;
-    const sections = ['home', 'publications', 'projects'];
+    const sections = ["home", "publications", "projects"];
 
     for (const section of sections) {
       const element = document.getElementById(section);
@@ -40,11 +39,12 @@ const Homepage = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleNavbar);
+    window.scrollTo(0, 0);
+    window.addEventListener("scroll", handleNavbar);
     return () => {
-      window.removeEventListener('scroll', handleNavbar);
-    }
-  }, [])
+      window.removeEventListener("scroll", handleNavbar);
+    };
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -89,7 +89,7 @@ const Homepage = () => {
       <div className="page-content">
         <NavBar active={activeSection} />
         <div className="content-wrapper">
-          <div className="row vh-100">
+          <div className={`row ${styles.hero}`}>
             <div className={styles.homepageLogoContainer}>
               <div style={logoStyle}>
                 <Logo width={logoSize} link={false} />
@@ -176,9 +176,9 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="footerWrapper page-footer">
-              <Footer />
-            </div>
+          </div>
+          <div className="footerWrapper">
+            <Footer />
           </div>
         </div>
       </div>
