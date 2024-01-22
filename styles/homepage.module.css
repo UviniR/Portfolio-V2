@@ -108,8 +108,19 @@
 	font-size: 250% ;
 }
 
+.homepageTitleDark {
+	width: 85% !important;
+	font-size: 250% ;
+	color: #e2e2ed;
+}
+
 .homepageSubtitle {
 	width: 85% !important;
+}
+
+.homepageSubtitleDark {
+	width: 85% !important;
+	color: #e2e2ed;
 }
 
 .homepageFirstAreaRightSide {
@@ -176,7 +187,19 @@
 		order: 2;
 	}
 
+	.homepageTitleDark {
+		width: 100% !important;
+		margin-top: 20px;
+		order: 2;
+	}
+
 	.homepageSubtitle {
+		width: 100% !important;
+		margin-top: 10px;
+		order: 3;
+	}
+
+	.homepageSubtitleDark {
 		width: 100% !important;
 		margin-top: 10px;
 		order: 3;
@@ -217,4 +240,8 @@
 	.hero{
 		min-height: 100vh;
 	}
+}
+
+.darkHr{
+	color: white;
 }

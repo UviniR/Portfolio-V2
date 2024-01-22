@@ -15,6 +15,7 @@ import { IoDocumentAttach } from "react-icons/io5";
 import styles from "@styles/homepage.module.css";
 
 const Homepage = () => {
+  const [isLight, setIsLight] = useState(false)
   const [stayLogo, setStayLogo] = useState(false);
   const [logoSize, setLogoSize] = useState(80);
   const [oldLogoSize, setOldLogoSize] = useState(80);
@@ -86,8 +87,8 @@ const Homepage = () => {
 
   return (
     <React.Fragment>
-      <div className="page-content">
-        <NavBar active={activeSection} />
+      <div className={isLight? "page-content" : "page-content-dark"}>
+        <NavBar active={activeSection} isLight={isLight} setIsLight={setIsLight} />
         <div className="content-wrapper">
           <div className={`row ${styles.hero}`}>
             <div className={styles.homepageLogoContainer}>
@@ -99,29 +100,29 @@ const Homepage = () => {
             <div className={styles.homepageContainer} id="home">
               <div className={styles.homepageFirstArea}>
                 <div className={styles.homepageFirstAreaLeftSide}>
-                  <div className={`title py-lg-5 ${styles.homepageTitle}`}>
+                  <div className={isLight? `title py-lg-5 ${styles.homepageTitle}`: `${styles.homepageTitleDark} title py-lg-5`}>
                     a curious mind that never gets tired of chasing after <span className={styles.gradientText}>learning machines</span>👩🏻‍💻
                   </div>
                   <div className="py-lg-5 py-3 d-flex align-items-center">
-                    <Link href={"/Uvini_CV.pdf"} target="_blank" className={`${styles.icons} pe-4`}>
+                    <Link href={"/Uvini_CV.pdf"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
                       <IoDocumentAttach size={24} />
                     </Link>
-                    <Link href={"mailto:ranaweeraraua.19@uom.lk"} target="_blank" className={`${styles.icons} pe-4`}>
+                    <Link href={"mailto:ranaweeraraua.19@uom.lk"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
                       <MdEmail size={24} />
                     </Link>
-                    <Link href={"https://www.linkedin.com/in/uvini-ranaweera-/"} target="_blank" className={`${styles.icons} pe-4`}>
+                    <Link href={"https://www.linkedin.com/in/uvini-ranaweera-/"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
                       <BiLogoLinkedin size={26} />
                     </Link>
 
-                    <Link href={"https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en"} target="_blank" className={`${styles.icons} pe-4`}>
+                    <Link href={"https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
                       <SiGooglescholar size={24} />
                     </Link>
                   </div>
-                  <div className={`subtitle ${styles.homepageSubtitle}`}>
+                  <div className={isLight? `subtitle ${styles.homepageSubtitle}`: `subtitle ${styles.homepageSubtitleDark}`}>
                     <div className={` ${styles.bioWrapper} pt-3`}>
                       <p style={{ fontSize: "110%", lineHeight: 2}} className={`text-center text-md-start mb-5`}>
                         Hey I am Uvini <span className={styles.shake}>👋</span> - a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
-                        <Link href={"http://uom.lk/business"} target={"_"} className={styles.uomLink}>
+                        <Link href={"http://uom.lk/business"} target={"_"} className={isLight? styles.uomLink : styles.uomLinkDark}>
                           <b className="fw-bold">University of Moratuwa</b>
                         </Link>
                         , Sri Lanka 🇱🇰. I support data-driven decision-making 🤯 by developing Machine Learning models. When it comes to{" "}
@@ -143,8 +144,8 @@ const Homepage = () => {
               <div className={`my-3`}>
                 <h6 id="publications">
                   {" "}
-                  <b>PUBLISHED WORK 🔬</b>{" "}
-                  <span className={`text-center py-md-5 py-4 textTitle`} style={{ fontSize: "18px", color: "#65656d" }}>
+                  <b className={isLight? "" : "h6Dark "}>PUBLISHED WORK 🔬</b>{" "}
+                  <span className={`text-center py-md-5 py-4 textTitle`} style={{ fontSize: "18px", color: `${isLight? "#65656d":"#e2e2ed"}` }}>
                     &nbsp; Explore{" "}
                     <a className="navbar-brand" href="https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en" target="_">
                       <span className={styles.gradientText}>Google Scholar</span>
@@ -152,14 +153,14 @@ const Homepage = () => {
                     to find them in order.
                   </span>
                 </h6>
-                <hr></hr>
-                <Article />
+                <hr className={isLight? "":styles.darkHr} />
+                <Article isLight={isLight} />
               </div>
               <div className={`${styles.homepageProjects} my-3 pb-5`}>
                 <h6 id="projects">
                   {" "}
-                  <b>ACADEMIC PROJECTS 👩🏻‍💻</b>{" "}
-                  <span className={`text-center py-md-5 py-4 textTitle`} style={{ fontSize: "18px", color: "#65656d" }}>
+                  <b className={isLight? "" : "h6Dark "}>ACADEMIC PROJECTS 👩🏻‍💻</b>{" "}
+                  <span className={`text-center py-md-5 py-4 textTitle`} style={{ fontSize: "18px", color: `${isLight? "#65656d":"#e2e2ed"}` }}>
                     &nbsp; Take a stroll through my{" "}
                     <a className="navbar-brand" href="https://github.com/UviniR" target="_">
                       <span className={styles.gradientText}>GitHub repositories</span>
@@ -167,17 +168,17 @@ const Homepage = () => {
                     .
                   </span>
                 </h6>
-                <hr></hr>
+                <hr className={isLight? "":styles.darkHr} />
                 <div className="container">
                   <div className="row align-items-center justify-content-center pb-5">
-                    <AllProjects />
+                    <AllProjects isLight={isLight} />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="footerWrapper page-footer ">
-            <Footer />
+          <div className={`${isLight? "footerWrapper":"footerWrapperDark"} page-footer`}>
+            <Footer isLight={isLight} />
           </div>
         </div>
       </div>
