@@ -12,7 +12,7 @@ const projects = [
         title: "Web App for Online Quizzes",
         description:
             "Developed using Python, the web app allows teachers to create quizzes and students to attempt quizzes.",
-        logo: "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/360px-Python.svg.png",
         technologies: ["Django", "MySQL", "HTML", "Bootstrap"],
 
         link: "https://github.com/UviniR/Quiz-Time",
