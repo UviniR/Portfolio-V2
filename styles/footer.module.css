@@ -7,7 +7,7 @@
 }
 
 .backgroundDark {
-  background-color:  rgba(15,23,42,0.7);
+  background-color:  rgba(15,23,42);
 }
 
 .titlecard {
@@ -31,12 +31,28 @@
   font-size: 100%;
 }
 
+.listDark{
+  color: #b1b1c0;
+  line-height: 2.5;
+  font-size: 100%;
+}
+
 .titles {
   padding: 2px;
   font-weight: 1000;
   font-size: 110%;
 }
 
+.titlesDark {
+  padding: 2px;
+  font-weight: 1000;
+  font-size: 110%;
+  color: #b1b1c0;
+}
+
+.smallTextDark {
+  color: #b1b1c0;
+}
 
 .footerText {
   font-size: 70%;
@@ -87,6 +103,10 @@
   }
 
   .smallText {
+    font-size: 100% !important;
+  }
+
+  .smallTextDark {
     font-size: 100% !important;
   }
 

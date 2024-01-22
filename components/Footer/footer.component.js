@@ -37,14 +37,14 @@ const Footer = (props) => {
         </div>
       </div>
 
-      <Modal show={show} onHide={handleClose} centered size="lg" className={`${styles.background}`}>
-        <Modal.Body className={`modal-body px-5 py-5`}>
-          <h3 className={`text-start pb-3 ${styles.titles} ${styles.largeText} rounded`}>9 RANDOM FACTS 🎁 </h3>
-          <p className={styles.smallText}>
+      <Modal show={show} onHide={handleClose} centered size="lg">
+        <Modal.Body className={`modal-body px-5 py-5 rounded ${isLight? styles.background : styles.backgroundDark}`}>
+          <h3 className={`text-start pb-3 ${isLight? styles.titles: styles.titlesDark} ${styles.largeText} rounded`}>9 RANDOM FACTS 🎁 </h3>
+          <p className={isLight? styles.smallText:styles.smallTextDark}>
             {" "}
             A blend of <span className="gradientText">my own judgements</span> + <span className="gradientText">what others say</span>.
           </p>
-          <ol className={`${styles.list} py-2`}>
+          <ol className={`${isLight? styles.list: styles.listDark} py-2`}>
             <li>
               Life is all about <b>&quot;Perfect magical moments 💜&quot;</b>
             </li>

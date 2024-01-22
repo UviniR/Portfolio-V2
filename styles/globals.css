@@ -186,9 +186,9 @@ a:active {
 }
 
 .footerWrapperDark {
-  box-shadow: 0 -3px 20px 0 hsla(0, 4%, 85%, 0.1);
+  box-shadow: 0 -3px 20px 0 hsla(0, 4%, 85%, 0.05);
   /* padding: 1.5rem; */
-  background-color: rgba(38, 51, 80, 0.314);
+  background-color: rgba(32, 43, 68, 0.314);
 }
 
 .page-footer {

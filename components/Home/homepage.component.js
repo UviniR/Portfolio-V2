@@ -15,7 +15,7 @@ import { IoDocumentAttach } from "react-icons/io5";
 import styles from "@styles/homepage.module.css";
 
 const Homepage = () => {
-  const [isLight, setIsLight] = useState(false)
+  const [isLight, setIsLight] = useState(true)
   const [stayLogo, setStayLogo] = useState(false);
   const [logoSize, setLogoSize] = useState(80);
   const [oldLogoSize, setOldLogoSize] = useState(80);
@@ -145,7 +145,7 @@ const Homepage = () => {
                 <h6 id="publications">
                   {" "}
                   <b className={isLight? "" : "h6Dark "}>PUBLISHED WORK 🔬</b>{" "}
-                  <span className={`text-center py-md-5 py-4 textTitle`} style={{ fontSize: "18px", color: `${isLight? "#65656d":"#e2e2ed"}` }}>
+                  <span className={`text-center py-md-5 py-4 textTitle`} style={{ fontSize: "18px", color: `${isLight? "#65656d":"#b1b1c0"}` }}>
                     &nbsp; Explore{" "}
                     <a className="navbar-brand" href="https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en" target="_">
                       <span className={styles.gradientText}>Google Scholar</span>
@@ -160,7 +160,7 @@ const Homepage = () => {
                 <h6 id="projects">
                   {" "}
                   <b className={isLight? "" : "h6Dark "}>ACADEMIC PROJECTS 👩🏻‍💻</b>{" "}
-                  <span className={`text-center py-md-5 py-4 textTitle`} style={{ fontSize: "18px", color: `${isLight? "#65656d":"#e2e2ed"}` }}>
+                  <span className={`text-center py-md-5 py-4 textTitle`} style={{ fontSize: "18px", color: `${isLight? "#65656d":"#b1b1c0"}` }}>
                     &nbsp; Take a stroll through my{" "}
                     <a className="navbar-brand" href="https://github.com/UviniR" target="_">
                       <span className={styles.gradientText}>GitHub repositories</span>
