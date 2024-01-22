@@ -13,7 +13,6 @@
 
 import React, { useState, useEffect } from "react";
 import Homepage from "@components/Home/homepage.component.js";
-import LoadingPage from "@components/Loading/loading.component.js"; // Import your LoadingPage component
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

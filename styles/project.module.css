@@ -5,6 +5,13 @@
 	height: 100%;
 }
 
+.projectDark {
+	mix-blend-mode: normal;
+	border-radius: 20px;
+	opacity: 0.8;
+	height: 100%;
+}
+
 .project a {
 	text-decoration: none;
 }
@@ -15,7 +22,18 @@
 	transition: background-color 0.3s ease-in-out;
 }
 
+.projectDark:hover {
+	background: rgba(15,23,42,0.7);
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+}
+
 .project:hover .projectLink {
+	color:  #14b8a6;
+	transition: color 0.3s ease-in-out;
+}
+
+.projectDark:hover .projectLink {
 	color:  #14b8a6;
 	transition: color 0.3s ease-in-out;
 }
@@ -40,8 +58,22 @@
 	font-weight: 700;
 }
 
+.projectTitle {
+	color: #e2e2ed;
+	font-size: 16px;
+	padding-top: 15px;
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+
 .projectDescription {
 	color: #27272a;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.projectDescriptionDark {
+	color: #e2e2ed;
 	font-size: 14px;
 	line-height: 1.5;
 }
@@ -49,6 +81,9 @@
 
 @media (max-width: 600px) {
 	.project {
+		height: 260px;
+	}
+	.projectDark {
 		height: 260px;
 	}
 }

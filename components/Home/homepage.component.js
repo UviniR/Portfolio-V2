@@ -119,13 +119,12 @@ const Homepage = () => {
                   </div>
                   <div className={`subtitle ${styles.homepageSubtitle}`}>
                     <div className={` ${styles.bioWrapper} pt-3`}>
-                      <p style={{ fontSize: "102%" }} className={`text-center text-md-start mb-5`}>
+                      <p style={{ fontSize: "110%", lineHeight: 2}} className={`text-center text-md-start mb-5`}>
                         Hey I am Uvini <span className={styles.shake}>👋</span> - a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
                         <Link href={"http://uom.lk/business"} target={"_"} className={styles.uomLink}>
                           <b className="fw-bold">University of Moratuwa</b>
                         </Link>
-                        , Sri Lanka 🇱🇰 <br></br>
-                        Basically, I support data-driven decision-making 🤯 by developing Machine Learning models. When it comes to{" "}
+                        , Sri Lanka 🇱🇰. I support data-driven decision-making 🤯 by developing Machine Learning models. When it comes to{" "}
                         <span className={styles.bioText}>
                           <b className="fw-bold">Natural Language Processing</b>
                         </span>
@@ -177,7 +176,7 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div className="footerWrapper">
+          <div className="footerWrapper page-footer ">
             <Footer />
           </div>
         </div>

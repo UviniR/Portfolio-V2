@@ -2,20 +2,27 @@
   cursor: pointer;
 }
 
-/* .modal-content {
-  font-family: "Heebo", sans-serif;
-} */
-
 .background {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+.backgroundDark {
+  background-color:  rgba(15,23,42,0.7);
+}
 
 .titlecard {
   /* background-color:rgba(45, 212, 190, 0.362); */
   background-color: rgb(255, 255, 255);
   color: #14b8a6;
   border-color: rgba(255, 255, 255);
+  /* box-shadow: 0 4px 8px 4px rgba(255, 255, 255, 0.362); */
+}
+
+.titlecardDark {
+  /* background-color:rgba(45, 212, 190, 0.362); */
+  background-color: rgb(15, 23, 42);
+  color: #14b8a6;
+  border-color: rgba(15, 23, 42);
   /* box-shadow: 0 4px 8px 4px rgba(255, 255, 255, 0.362); */
 }
 
@@ -30,13 +37,15 @@
   font-size: 110%;
 }
 
-.btn-close {
-  color: white !important;
-}
 
 .footerText {
-  font-size: 85%;
+  font-size: 70%;
   color: #65656d;
+}
+
+.footerTextDark {
+  font-size: 70%;
+  color: #b1b1c0;
 }
 
 .footerTag {
@@ -44,13 +53,30 @@
   color: #65656d;
 }
 
+.footerTagDark {
+  font-size: 100%;
+  color: #b1b1c0;
+}
+
+
 .Link {
   font-weight: 500;
   color: #65656d;
   font-size: 100%;
 }
 
+.LinkDark {
+  font-weight: 500;
+  color: #b1b1c0;
+  font-size: 100%;
+}
+
 .Link:hover {
+  color: #14b8a6;
+  font-weight: 500;
+}
+
+.LinkDark:hover {
   color: #14b8a6;
   font-weight: 500;
 }

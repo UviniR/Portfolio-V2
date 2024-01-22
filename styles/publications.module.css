@@ -6,8 +6,21 @@
 	opacity: 0.8;
 }
 
+.homepageArticleDark {
+	width: 100%;
+	mix-blend-mode: normal;
+	border-radius: 20px;
+	opacity: 0.8;
+}
+
 .homepageArticle:hover {
 	background: #fafafa;
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.homepageArticleDark:hover {
+	background: rgba(15,23,42,0.7);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
@@ -23,6 +36,13 @@
 	margin-bottom: 5px;
 }
 
+.homepageArticleDateDark {
+	opacity: 1;
+	color: #bfbfda;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
 .homepageArticleTitle {
 	opacity: 1;
 	color:  #27272a;
@@ -31,8 +51,22 @@
 	font-weight: 700;
 }
 
+.homepageArticleTitleDark {
+	opacity: 1;
+	color:  #e2e2ed;
+	font-size: 16px;
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+
 .homepageArticleDescription {
 	color: #27272a;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.homepageArticleDescriptionDark {
+	color: #e2e2ed;
 	font-size: 14px;
 	line-height: 1.5;
 }
@@ -45,13 +79,31 @@
 	text-decoration: none;
 }
 
+.homepageArticleLinkDark {
+	opacity: 1;
+	margin-bottom: 1em;
+	font-weight: 700;
+	color: #c8c8d7;
+	text-decoration: none;
+}
+
+
 
 .homepageArticleLink :hover {
 	color: #14b8a6;
 	text-decoration: none;
 }
+
+.homepageArticleLinkDark :hover {
+	color: #14b8a6;
+	text-decoration: none;
+}
+
 @media (max-width: 600px) {
 	.homepageArticle {
+		width: 100%;
+	}
+	.homepageArticleDark {
 		width: 100%;
 	}
 }
@@ -68,13 +120,21 @@
 	color: #14b8a6;
 	border-radius: 9999px;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 13px;
   }
 
 .projectLink {
 	display: flex;
 	align-items: center;
 	color: #65656d;
+	font-size: 12px;
+	padding-top: 20px;
+}
+
+.projectLinkDark {
+	display: flex;
+	align-items: center;
+	color: #c8c8d7;
 	font-size: 12px;
 	padding-top: 20px;
 }

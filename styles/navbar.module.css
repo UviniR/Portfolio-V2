@@ -19,8 +19,18 @@
 	height: 45px;
 	padding-left: 0%;
 	padding-right: 0%;
-	background: #fff;
+	background: #ffffff;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 40px;
+}
+
+.navBackgroundDark {
+	width: 380px;
+	height: 45px;
+	padding-left: 0%;
+	padding-right: 0%;
+	background: rgba(15,23,42);
+	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.1);
 	border-radius: 40px;
 }
 
@@ -38,6 +48,13 @@
 	font-weight: bold;
 	font-size: 80%;
 	color: #acacb4;
+
+}
+
+.navItemDark {
+	font-weight: bold;
+	font-size: 80%;
+	color: #bfbfda;
 
 }
 
@@ -66,8 +83,16 @@
 		width: 80%;
 		height: 40px;
 	}
+	.navBackgroundDark {
+		width: 80%;
+		height: 40px;
+	}
 
 	.navItem {
 		font-weight: bold;
 	}
+	.navItemDark {
+		font-weight: bold;
+	}
+
 }

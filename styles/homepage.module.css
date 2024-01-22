@@ -43,16 +43,33 @@
 	color: #65656d;
 }
 
+.iconsDark {
+	color: #c8c8d7;
+}
+
 .icons:hover {
 	color: #14b8a6;
 }
 
+.iconsDark:hover {
+	color: #14b8a6;
+}
+
 .uomLink {
-	color: #65656d;
+	color: #27272a;
+	text-decoration: none;
+}
+
+.uomLinkDark {
+	color: #e2e2ed;
 	text-decoration: none;
 }
 
 .uomLink:hover {
+	color: #14b8a6;
+}
+
+.uomLinkDark:hover {
 	color: #14b8a6;
 }
 
@@ -113,24 +130,6 @@
 
 .homepageImageWrapper img {
 	width: 100%;
-}
-
-.homepageSocials {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding-top: 30px;
-}
-
-.homepageSocialIcon {
-	padding-right: 20px;
-	font-size: 25px;
-	transition: color 0.2s ease-in-out;
-	color: var(--secondary-color);
-}
-
-.homepageSocialIcon:hover {
-	color: var(--primary-color);
 }
 
 .homepageAfterTitle {
