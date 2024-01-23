@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+  <img alt="Logo" src="/readme-asstes/logo.png" width="80" />
+  <h1>uvini-ranaweera.web.app</h1>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+  This is the second release of my portfolio [uvini-ranaweera.web.app](https://uvini-ranaweera.web.app/) built with [Next.js](https://nextjs.org/) and hosted with [Firebase Hosting](https://firebase.google.com/docs/hosting). In this release, I have introduced light and dark themes to enhance the user experience.
 
+[V1](https://github.com/UviniR/Portfolio-V1)
+  <br></br>
+
+
+  ![demo](/readme-asstes/demo.png "Demo")
+  
+</div>
+
+
+## 🌟 Welcome to Fork 
+
+I'm pleased to welcome anyone interested in using my code to bring their website to life! 🚀 A little bit of acknowledgement goes a long way, so if you could give credit to my work by linking back to [uvini-ranaweera.web.app](https://uvini-ranaweera.web.app/), I'd be over the moon 🌝. 
+
+Once again -- the BIGGEST SHOUTOUT to [Ranul Dayarathne](https://ranul-navojith.web.app/) 🎉
+
+Thanks!
+
+## 🛠 Run it
+
+1. Clone the repository to your local machine
+
+   ```sh
+   git clone https://github.com/UviniR/Portfolio-V2.git
+   ```
+
+2. Once the cloning process is completed, navigate into the cloned directory.
+
+   ```sh
+   cd portfolio-V2-main
+   ```
+
+3. Install dependencies
+
+   ```sh
+   npm i
+   ```
+
+4. Start the development server
+
+   ```sh
+   npm run dev
+   ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🪄 Customise to match your style & feel the magic!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## 🎨 Colour Palette 
+
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Shadow Gray   | ![#2dd4be](https://via.placeholder.com/10/27272a?text=+) `#27272a` |
+| Tranquil Azure     | ![#0f172a](https://via.placeholder.com/10/bfd2ec?text=+) `#bfd2ec` |
+| Deep Sapphire      | ![#5eead4](https://via.placeholder.com/10/646ffe?text=+) `#646ffe` |
+| Sky Brilliance| ![#ccd6f6](https://via.placeholder.com/10/14b2fa?text=+) `#14b2fa` |
+| Pale Yellow   | ![#646ffe](https://via.placeholder.com/10/fce694?text=+) `#fce694` |
+| Turquoise Lagoon| ![#14b2fa](https://via.placeholder.com/10/14b8a6?text=+) `#14b8a6` |
+| Slate Blue    | ![#FCE694](https://via.placeholder.com/10/65656d?text=+) `#65656d` |
+| Lilac Mist    | ![#FCE694](https://via.placeholder.com/10/c8c8d7?text=+) `#c8c8d7` |
+| Cloudy Mist    | ![#FCE694](https://via.placeholder.com/10/d1d5db?text=+) `#d1d5db` |
+| Dusk Lavender   | ![#FCE694](https://via.placeholder.com/10/acacb4?text=+) `#acacb4` |
+| Tranquil Sky   | ![#FCE694](https://via.placeholder.com/10/8fa4b8?text=+) `#8fa4b8` |
+
+
+## ℹ️ Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
