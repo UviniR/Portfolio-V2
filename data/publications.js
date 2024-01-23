@@ -1,10 +1,24 @@
 const publications = [
     {
-        type: "Conference Paper",
-        title: "Comparison of Machine Learning Models to Classify Documents on Digital Development",
-        description: "DSAI 2023: 1st International Conference on Data Science & Artificial Intelligence",
-        date: "27 Nov 2023",
-        link: "https://doi.org/10.1007/978-981-99-7969-1_5"
+        type: "Paper",
+        title: "Paper 1",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        date: "1 Jan 2024",
+        link: "https://doi.org"
+    },
+    {
+        type: "Paper",
+        title: "Paper 2",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        date: "1 Jan 2024",
+        link: "https://doi.org"
+    },
+    {
+        type: "Paper",
+        title: "Paper 3",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        date: "1 Jan 2024",
+        link: "https://doi.org"
     },
 ]
 export default publications

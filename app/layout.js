@@ -13,15 +13,15 @@ export const metadata = {
     maximumScale: 1,
   },
   title: {
-    template: `%s - UviniR ${siteMetaData.year}`,
+    template: `%s - Name ${siteMetaData.year}`,
     default: siteMetaData.title,
   },
   description: siteMetaData.description,
-  keywords: ['Uvini', 'Ayathma', 'Ranaweera', 'Uvini Ranaweera', 'Uvini Ayathma', 'Uvini Ayathma Ranaweera', siteMetaData.year, 'Portfolio', `uvinis portfolio`, `uvini portfolio`, 'uvini ranweera portfolio', `uvini  ayathma's portfolio`, `uvini's portfolio`, `uvini ranaweera's portfolio`, 'website', 'Uvini Ranaweera', 'Uvini Ayathma Ranaweera', 'Uvini Ayathma'],
-  authors: [{ name: 'Uvini Ranaweera (UviniR)', url: siteMetaData.url }],
+  keywords: ['', '', '', '', siteMetaData.year, '', ``],
+  authors: [{ name: 'Your Name (Name)', url: siteMetaData.url }],
   openGraph: {
     title: {
-      template: `%s - UviniR ${siteMetaData.year}`,
+      template: `%s - Name ${siteMetaData.year}`,
       default: siteMetaData.title,
     },
     description: siteMetaData.description,
@@ -40,7 +40,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: {
-      template: `%s - UviniR ${siteMetaData.year}`,
+      template: `%s - Name ${siteMetaData.year}`,
       default: siteMetaData.title,
     },
     description: siteMetaData.description,

@@ -1,30 +1,56 @@
 const projects = [
    
     {
-        title: "Web App for Sentiment Analysis",
+        title: "Project 1",
         description:
-            "Fine-tuned a pre-trained HuggingFace model for sentiment analysis of customer reviews received by a hotel.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         logo: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
-        technologies: ["PyTorch", "HuggingFace", "Streamlit"],
-        link: "https://github.com/UviniR/Reviews-Sentiment-Analysis",
+        technologies: ["text", "text", "text"],
+        link: "https://github.com",
     },
     {
-        title: "Web App for Online Quizzes",
+        title: "Projct 2",
         description:
-            "Developed using Python, the web app allows teachers to create quizzes and students to attempt quizzes.",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/360px-Python.svg.png",
-        technologies: ["Django", "MySQL", "HTML", "Bootstrap"],
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        logo: "https://cdn-icons-png.flaticon.com/128/5968/5968350.png",
+        technologies: ["text", "text", "text", "text"],
 
-        link: "https://github.com/UviniR/Quiz-Time",
+        link: "https://github.com",
     },
     {
-        title: "NYC Yellow Taxi Trips Analysis",
+        title: "Project 3",
         description:
-            "Used Python commands on a Apache Hadoop cluster created on GCP to pre-process and analyse Big Data.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         logo: "https://hadoop.apache.org/elephant.png",
-        technologies: ["GCP", "DataProc", "PySpark", "Looker"],
-        link: "https://github.com/UviniR/NYC-Yellow-Taxi-Trips",
+        technologies: ["text", "text", "text", "text"],
+        link: "https://github.com",
     },
+
+    {
+        title: "Project 4",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        logo: "https://cdn-icons-png.flaticon.com/128/9307/9307630.png",
+        technologies: ["text", "text", "text", "text"],
+        link: "https://github.com",
+    },
+    {
+        title: "Project 5",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        logo: "https://cdn-icons-png.flaticon.com/128/5968/5968282.png",
+        technologies: ["text", "text", "text", "text"],
+        link: "https://github.com",
+    },
+    {
+        title: "Project 6",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        logo: "https://cdn-icons-png.flaticon.com/128/1126/1126012.png",
+        technologies: ["text", "text", "text", "text"],
+        link: "https://github.com",
+    },
+
 
 ]
 export default projects

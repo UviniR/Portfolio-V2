@@ -2,8 +2,10 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "@styles/navbar.module.css";
-import { MdOutlineDarkMode } from "react-icons/md";
-import { MdDarkMode } from "react-icons/md";
+
+import { MdModeNight } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
+
 
 const NavBar = (props) => {
 	const [active,setActive] = useState(props.active)
@@ -56,12 +58,12 @@ const NavBar = (props) => {
 							<li
 								className={"navItem"}
 							>
-								<Link href={"/Uvini_CV.pdf"} target="_blank" className={isLight? styles.navItem: styles.navItemDark}>CV 👩🏻‍💻</Link>
+								<Link href={"/CV.pdf"} target="_blank" className={isLight? styles.navItem: styles.navItemDark}>CV 👩🏻‍💻</Link>
 							</li>
 							<li
 								className={"navItem"}
 							>
-								<button onClick={_ => handleTheme()}  className={`btn p-0 ${isLight? styles.navItem: styles.navItemDark}`}>{isLight? <MdDarkMode className={styles.themeIcon} size={20} /> : <MdOutlineDarkMode className={styles.themeIconDark} size={20} /> }</button>
+								<button onClick={_ => handleTheme()}  className={`btn p-0 ${isLight? styles.navItem: styles.navItemDark}`}>{isLight? <MdModeNight className={styles.themeIcon} size={20} /> : <MdOutlineLightMode className={styles.themeIconDark} size={20} /> }</button>
 							</li>
 						</ul>
 					</div>

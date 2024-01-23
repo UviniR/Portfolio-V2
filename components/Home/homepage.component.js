@@ -101,35 +101,32 @@ const Homepage = () => {
               <div className={styles.homepageFirstArea}>
                 <div className={styles.homepageFirstAreaLeftSide}>
                   <div className={isLight? `title py-lg-5 ${styles.homepageTitle}`: `${styles.homepageTitleDark} title py-lg-5`}>
-                    a curious mind that never gets tired of chasing after <span className={styles.gradientText}>learning machines</span>👩🏻‍💻
+                  Lorem ipsum dolor sit amet <span className={styles.gradientText}>highlight</span>👩🏻‍💻
                   </div>
                   <div className="py-lg-5 py-3 d-flex align-items-center">
-                    <Link href={"/Uvini_CV.pdf"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
+                    <Link href={"/CV.pdf"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
                       <IoDocumentAttach size={24} />
                     </Link>
-                    <Link href={"mailto:ranaweeraraua.19@uom.lk"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
+                    <Link href={"mailto:example@example.com"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
                       <MdEmail size={24} />
                     </Link>
-                    <Link href={"https://www.linkedin.com/in/uvini-ranaweera-/"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
+                    <Link href={"https://www.linkedin.com"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
                       <BiLogoLinkedin size={26} />
                     </Link>
 
-                    <Link href={"https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
+                    <Link href={"https://scholar.google.com"} target="_blank" className={isLight? `${styles.icons} pe-4`: `${styles.iconsDark} pe-4`}>
                       <SiGooglescholar size={24} />
                     </Link>
                   </div>
                   <div className={isLight? `subtitle ${styles.homepageSubtitle}`: `subtitle ${styles.homepageSubtitleDark}`}>
                     <div className={` ${styles.bioWrapper} pt-3`}>
                       <p style={{ fontSize: "110%", lineHeight: 2}} className={`text-center text-md-start mb-5`}>
-                        Hey I am Uvini <span className={styles.shake}>👋</span> - a final-year Business Science undergraduate 👩🏻‍🎓 at{" "}
-                        <Link href={"http://uom.lk/business"} target={"_"} className={isLight? styles.uomLink : styles.uomLinkDark}>
-                          <b className="fw-bold">University of Moratuwa</b>
-                        </Link>
-                        , Sri Lanka 🇱🇰. I support data-driven decision-making 🤯 by developing Machine Learning models. When it comes to{" "}
+                        Hey I am Name 👋 - aLorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, 
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua to{" "}
                         <span className={styles.bioText}>
-                          <b className="fw-bold">Natural Language Processing</b>
+                          <b className="fw-bold">magical text</b>
                         </span>
-                        , my excitement hits the roof!
                         <span className={styles.cartoonCharacter}></span>
                       </p>
                     </div>
@@ -147,7 +144,7 @@ const Homepage = () => {
                   <b className={isLight? "" : "h6Dark "}>PUBLISHED WORK 🔬</b>{" "}
                   <span className={`text-center py-md-5 py-4 textTitle`} style={{ fontSize: "18px", color: `${isLight? "#65656d":"#b1b1c0"}` }}>
                     &nbsp; Explore{" "}
-                    <a className="navbar-brand" href="https://scholar.google.com/citations?user=P1ECyTcAAAAJ&hl=en" target="_">
+                    <a className="navbar-brand" href="https://scholar.google.com" target="_">
                       <span className={styles.gradientText}>Google Scholar</span>
                     </a>{" "}
                     to find them in order.
@@ -162,7 +159,7 @@ const Homepage = () => {
                   <b className={isLight? "" : "h6Dark "}>ACADEMIC PROJECTS 👩🏻‍💻</b>{" "}
                   <span className={`text-center py-md-5 py-4 textTitle`} style={{ fontSize: "18px", color: `${isLight? "#65656d":"#b1b1c0"}` }}>
                     &nbsp; Take a stroll through my{" "}
-                    <a className="navbar-brand" href="https://github.com/UviniR" target="_">
+                    <a className="navbar-brand" href="https://github.com" target="_">
                       <span className={styles.gradientText}>GitHub repositories</span>
                     </a>
                     .

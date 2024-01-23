@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import me from "public/me.jpg";
+import me from "public/me.png";
 import styles from "@styles/logo.module.css";
 import Image from "next/image";
 
