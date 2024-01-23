@@ -18,13 +18,13 @@
 h6 {
   color: #27272a;
   line-height: 1.5;
-  font-family: "Thonburi", "Verdana", sans-serif;
+  font-family: "Thonburi", "Inter", sans-serif;
 }
 
 .h6Dark {
-  color: #d1d5db;
+  color: #bfd2ec;
   line-height: 1.5;
-  font-family: "Thonburi", "Verdana", sans-serif;
+  font-family: "Thonburi", "Inter", sans-serif;
 }
 
 h4 {
@@ -35,7 +35,7 @@ h4 {
 }
 
 .h4Dark {
-  color: #d1d5db;
+  color: #bfd2ec;
   line-height: 1.5;
   font-family: "Rancho", "Bradley Hand", "Gill Sans", sans-serif;
 }
@@ -59,13 +59,12 @@ h4 {
 
 .textTitleDark {
   font-family: "Rancho", "Bradley Hand", "Gill Sans", sans-serif;
-  color: #d1d5db;
+  color: #bfd2ec;
 }
 
 body {
-  font-family: "Thonburi", "Verdana", sans-serif;
-  font-weight: 200;
-  line-height: 1.6;
+  font-family: "Thonburi", "Inter", sans-serif;
+  line-height: 1.8;
 }
 
 ::-moz-selection {

@@ -16,7 +16,7 @@
 
 .navBackground {
 	width: 380px;
-	height: 50px;
+	height: 40px;
 	padding-left: 0%;
 	padding-right: 0%;
 	background: #ffffff;
@@ -26,7 +26,7 @@
 
 .navBackgroundDark {
 	width: 380px;
-	height: 50px;
+	height: 40px;
 	padding-left: 0%;
 	padding-right: 0%;
 	background: rgba(15,23,42);
@@ -54,7 +54,7 @@
 .navItemDark {
 	font-weight: bold;
 	font-size: 80%;
-	color: #b1b1d8;
+	color: #8fa4b8;
 
 }
 
@@ -107,6 +107,6 @@
 }
 
 .themeIconDark{
-	color: #b1b1d8;
+	color: #bfd2ec;
 	;
 }

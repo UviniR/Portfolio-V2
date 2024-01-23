@@ -61,7 +61,7 @@
 }
 
 .uomLinkDark {
-	color: #d1d5db;
+	color: #bfd2ec;
 	text-decoration: none;
 }
 
@@ -111,7 +111,8 @@
 .homepageTitleDark {
 	width: 85% !important;
 	font-size: 250% ;
-	color: #d1d5db;
+	color: #d1d5db
+	;
 }
 
 .homepageSubtitle {
@@ -120,7 +121,7 @@
 
 .homepageSubtitleDark {
 	width: 85% !important;
-	color: #d1d5db;
+	color: #bfd2ec;
 }
 
 .homepageFirstAreaRightSide {
