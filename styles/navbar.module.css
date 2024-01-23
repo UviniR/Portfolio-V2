@@ -54,7 +54,7 @@
 .navItemDark {
 	font-weight: bold;
 	font-size: 80%;
-	color: #bfbfda;
+	color: #b1b1d8;
 
 }
 
@@ -107,5 +107,6 @@
 }
 
 .themeIconDark{
-	color: #bfbfda;
+	color: #b1b1d8;
+	;
 }

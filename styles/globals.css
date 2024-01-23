@@ -22,7 +22,7 @@ h6 {
 }
 
 .h6Dark {
-  color: #e2e2ed;
+  color: #d1d5db;
   line-height: 1.5;
   font-family: "Thonburi", "Verdana", sans-serif;
 }
@@ -35,7 +35,7 @@ h4 {
 }
 
 .h4Dark {
-  color: #e2e2ed;
+  color: #d1d5db;
   line-height: 1.5;
   font-family: "Rancho", "Bradley Hand", "Gill Sans", sans-serif;
 }
@@ -59,7 +59,7 @@ h4 {
 
 .textTitleDark {
   font-family: "Rancho", "Bradley Hand", "Gill Sans", sans-serif;
-  color: #e2e2ed;
+  color: #d1d5db;
 }
 
 body {
@@ -173,7 +173,7 @@ a:active {
 }
 
 .titleDark {
-  color: #e2e2ed;
+  color: #d1d5db;
   font-size: 45px;
   font-weight: 700;
   width: 70%;

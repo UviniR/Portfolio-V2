@@ -31,14 +31,14 @@
 
 .homepageArticleDate {
 	opacity: 1;
-	color: #acacb4;;
+	color: #acacb4;
 	font-size: 12px;
 	margin-bottom: 5px;
 }
 
 .homepageArticleDateDark {
 	opacity: 1;
-	color: #bfbfda;
+	color: #b1b1d8;
 	font-size: 12px;
 	margin-bottom: 5px;
 }
@@ -53,7 +53,7 @@
 
 .homepageArticleTitleDark {
 	opacity: 1;
-	color:  #e2e2ed;
+	color:  #d1d5db	;
 	font-size: 16px;
 	margin-bottom: 1em;
 	font-weight: 700;
@@ -66,7 +66,7 @@
 }
 
 .homepageArticleDescriptionDark {
-	color: #e2e2ed;
+	color: #d1d5db	;
 	font-size: 14px;
 	line-height: 1.5;
 }
