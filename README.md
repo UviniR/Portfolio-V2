@@ -2,7 +2,7 @@
 <div align="center">
 
   <img alt="Logo" src="/readme-assets/logo.png" width="80" />
-  <h1>uvini-ranaweera.web.app</h1>
+  <h1>uvini.me</h1>
 
   This is the second release of my portfolio [uvini.me](https://uvini.me) built with [Next.js](https://nextjs.org/) and hosted with [Firebase Hosting](https://firebase.google.com/docs/hosting). In this release, I have introduced light and dark themes to enhance the user experience.
 
