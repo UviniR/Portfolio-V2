@@ -4,7 +4,7 @@
   <img alt="Logo" src="/readme-assets/logo.png" width="80" />
   <h1>uvini-ranaweera.web.app</h1>
 
-  This is the second release of my portfolio [uvini-ranaweera.web.app](https://uvini-ranaweera.web.app/) built with [Next.js](https://nextjs.org/) and hosted with [Firebase Hosting](https://firebase.google.com/docs/hosting). In this release, I have introduced light and dark themes to enhance the user experience.
+  This is the second release of my portfolio [uvini.me](https://uvini.me) built with [Next.js](https://nextjs.org/) and hosted with [Firebase Hosting](https://firebase.google.com/docs/hosting). In this release, I have introduced light and dark themes to enhance the user experience.
 
 [V1](https://github.com/UviniR/Portfolio-V1)
   <br></br>
@@ -17,7 +17,7 @@
 
 ## 🌟 Welcome to Fork 
 
-I'm pleased to welcome anyone interested in using my code to bring their website to life! 🚀 A little bit of acknowledgement goes a long way, so if you could give credit to my work by linking back to [uvini-ranaweera.web.app](https://uvini-ranaweera.web.app/), I'd be over the moon 🌝. 
+I'm pleased to welcome anyone interested in using my code to bring their website to life! 🚀 A little bit of acknowledgement goes a long way, so if you could give credit to my work by linking back to [uvini.me](https://uvini.me), I'd be over the moon 🌝. 
 
 Once again -- the BIGGEST SHOUTOUT to [Ranul Dayarathne](https://ranul-navojith.web.app/) 🎉
 
