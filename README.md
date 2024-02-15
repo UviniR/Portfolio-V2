@@ -58,8 +58,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
 | Shadow Gray   | ![#2dd4be](https://via.placeholder.com/10/27272a?text=+) `#27272a` |
-| Tranquil Azure     | ![#0f172a](https://via.placeholder.com/10/bfd2ec?text=+) `#bfd2ec` |
-| Deep Sapphire      | ![#5eead4](https://via.placeholder.com/10/646ffe?text=+) `#646ffe` |
+| Tranquil Azure| ![#0f172a](https://via.placeholder.com/10/bfd2ec?text=+) `#bfd2ec` |
+| Deep Sapphire | ![#5eead4](https://via.placeholder.com/10/646ffe?text=+) `#646ffe` |
 | Sky Brilliance| ![#ccd6f6](https://via.placeholder.com/10/14b2fa?text=+) `#14b2fa` |
 | Pale Yellow   | ![#646ffe](https://via.placeholder.com/10/fce694?text=+) `#fce694` |
 | Turquoise Lagoon| ![#14b2fa](https://via.placeholder.com/10/14b8a6?text=+) `#14b8a6` |
